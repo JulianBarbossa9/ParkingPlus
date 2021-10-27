@@ -13,14 +13,21 @@
                         "carrusel carrusel carrusel carrusel carrusel carrusel"
                         "mision mision mision text-mision text-mision text-mision"
                         "text-vision text-vision text-vision vision vision vision"
-                        "objetivos objetivos objetivos objetivos objetivos objetivos";
+                        "objetivos objetivos objetivos objetivos objetivos objetivos"
+                        "eslogan eslogan eslogan img-empre img-empre img-empre"
+                        "estudioFacti estudioFacti estudioMerca estudioMerca estudioEstadofinan estudioEstadofinan"
+                        "organigrama organigrama organigrama organigrama organigrama organigrama"
+                        "tipoEmpresa tipoEmpresa talentoHumano talentoHumano costoDesarrollo costoDesarrollo"
+                        "footer footer footer footer footer footer";
   grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
-  grid-template-rows: 100px 80px 600px 250px 250px 300px;
+  grid-template-rows: 100px 80px 700px 350px 350px 300px 400px 450px 550px 500px 100px;
 }
+
 img{
-  width: 100;
-  height: 50px;
+  width: auto;
+  height: 80px;
 }
+
 .mainLogo{
   grid-area: mainLogo;
   /* border: 2px solid red; */
@@ -119,5 +126,88 @@ h2{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+h3{
+  margin: 30px 0;
+}
+
+.eslogan {
+  grid-area: eslogan;
+  display: flex;
+  justify-content: center;
+  border: 2px solid red;
+}
+
+.img-empre {
+  grid-area: img-empre;
+  display: flex;
+  justify-content: center;
+  border: 2px solid red;
+  
+}
+
+.estudioFacti{
+  border: 2px solid red;
+  grid-area:estudioFacti ;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.estudioMerca{
+  grid-area:estudioMerca;
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+}
+
+.estudioEstadofinan {
+  grid-area: estudioEstadofinan ;
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+}
+
+/* .TargetaUno, 
+.TargetaDos,
+.TargetaTres{
+  border: 2px solid rgb(22, 240, 124);
+  margin: 50px 50px;
+  padding: 80px 20px;
+} */
+
+.organigrama{
+  grid-area:organigrama;
+  display: flex;
+  justify-content: center;
+  border: 2px solid red;
+  
+}
+
+.tipoEmpresa {
+  grid-area:tipoEmpresa ;
+  display: flex;
+  justify-content: center;
+  border: 2px solid red;
+}
+
+.talentoHumano{
+  grid-area:talentoHumano;
+  display: flex;
+  justify-content: center;
+  border: 2px solid red;
+}
+
+.costoDesarrollo{
+  grid-area:costoDesarrollo;
+  display: flex;
+  justify-content: center;
+  border: 2px solid red;
+}
+
+footer{
+  grid-area: footer;
+  border: 2px solid red;
 }
 

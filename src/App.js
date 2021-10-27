@@ -6,7 +6,11 @@ import Carrusel from './components/Carrusel';
 import Mision from './components/Mision';
 import Vision from './components/Vision';
 import Objetivos from './components/Objetivos';
-
+import Eslogan from './components/Eslogan';
+import Empresarial from './components/Empresarial';
+import Estudios from './components/Estudios';
+import Organigrama from './components/Organigrama';
+import Desarrollo from './components/Desarrollo';
 
 function App() {
   
@@ -29,6 +33,20 @@ function App() {
           />
           <Objetivos
           />
+          <Eslogan
+          />
+          <Empresarial
+          />
+          <Estudios
+          />
+          <Organigrama
+          />
+          <Desarrollo
+          />
+          <footer>
+            <p>Todos los derechos reservador &copy;</p> 
+          </footer>
+          
 
       </div>
     </Fragment>
