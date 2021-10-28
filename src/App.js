@@ -21,12 +21,16 @@ function App() {
     <Fragment>
       <div className = "container">
         <div className = "mainLogo">
-          <img src = {logo} alt="logoParking +"/>
+          <img src = {logo} alt="logoParking +" />
         </div>  
           <Header
           />
+
           <Carrusel
+
+
           />
+
           <Mision
           />
           <Vision
@@ -44,7 +48,7 @@ function App() {
           <Desarrollo
           />
           <footer>
-            <p>Todos los derechos reservador &copy;</p> 
+            <p>Todos los derechos reservador &copy;</p>  
           </footer>
           
 
