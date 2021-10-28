@@ -137,7 +137,7 @@ img{
 .img-carrusel{
   width: 920px;
   height:auto;
-  opacity: 60%; 
+  opacity: 75%; 
 }
 
 .contendorSlide{
@@ -185,6 +185,7 @@ img{
   align-items: center;
   padding: 0 30px;
 }
+
 h2{
   margin: 20px 0;
 }
