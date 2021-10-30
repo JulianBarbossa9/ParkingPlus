@@ -103,7 +103,7 @@ img{
   position: absolute;
   transition: .3s ease all;
   margin: 0 50px;
-  filter: drop-shadow(2px 2px 2px rgb(83, 83, 83) );
+  filter: drop-shadow(2px 2px 2px rgb(59, 187, 87) );
   
 }
 
@@ -162,6 +162,7 @@ img{
   justify-content: center;
   align-items: center;
   font-size: 50px;
+  filter: drop-shadow(2px 5px 2px rgb(59, 187, 87) );
 }
 
 .text-mision {
@@ -182,6 +183,7 @@ img{
   justify-content: center;
   align-items: center;
   font-size: 50px;
+  filter: drop-shadow(2px 5px 2px rgb(59, 187, 87) );
 }
 
 .text-vision{
