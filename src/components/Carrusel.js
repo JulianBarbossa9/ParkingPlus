@@ -1,4 +1,4 @@
-import React, {Fragment, useRef} from 'react';
+import React, {Fragment, useRef, useEffect} from 'react';
 import img1 from './../images/retoV1FE.jpg'
 import img2 from './../images/retoV2FE.jpg'
 import img3 from './../images/retoV3FE.jpg'
@@ -14,6 +14,7 @@ import flecha2 from './../images/right-arrow.png'
 const Carrusel = () => {
     
     const slideshow = useRef(null);
+    const intervaloCarrusel = useRef(null);
 
     const siguiente = () => {
         // Comprobamos que el slideshow tenga elementos
@@ -69,6 +70,26 @@ const Carrusel = () => {
             }, 30)
         }
     }
+
+    useEffect(() => {
+        intervaloCarrusel.current = setInterval(()=>{
+            siguiente();
+        },4000);
+
+        //Eliminar los intervalos
+        slideshow.current.addEventListener('mouseenter', () =>{
+            clearInterval(intervaloCarrusel.current);
+        });
+
+        // Volver a poner el intervalo cuando saquen el cursor de la imagen
+        slideshow.current.addEventListener('mouseleave', () =>{
+            intervaloCarrusel.current = setInterval(()=>{
+                siguiente();
+            },4000);
+        });
+    },[]);
+
+
 
     return (  
         <Fragment>
