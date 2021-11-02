@@ -6,19 +6,19 @@ const Estudios = () => {
         <Fragment>
             
             <div className="estudioFacti">
-                <h4>Estudio Factibilidad</h4>
+                <h4>Estudio Tecnica</h4>
                     <div className="targetaUno">
 
                     </div>
             </div>
             <div className="estudioMerca">
-                <h4>Estudio de Mercado</h4>
+                <h4>Factibilidad Economica</h4>
                     <div className="targetaDos">
                     
                     </div>
             </div>
             <div className="estudioEstadofinan">
-                    <h4>Estado Financiero</h4>
+                    <h4>Estudio Mercado</h4>
                     <div className="targetaTres">
 
                     </div>
