@@ -1,24 +1,59 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+import React, {Fragment} from 'react';
+import Header from './components/Header';
+import logo from './images/parkin1.png';
+import Carrusel from './components/Carrusel';
+import Mision from './components/Mision';
+import Vision from './components/Vision';
+import Objetivos from './components/Objetivos';
+import Eslogan from './components/Eslogan';
+import Empresarial from './components/Empresarial';
+import Estudios from './components/Estudios';
+import Organigrama from './components/Organigrama';
+import Desarrollo from './components/Desarrollo';
 
 function App() {
+  
+  
+  
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <div className = "container">
+        <div className = "mainLogo">
+          <img src = {logo} alt="logoParking +" />
+        </div>  
+          <Header
+          />
+
+          <Carrusel
+
+
+          />
+
+          <Mision
+          />
+          <Vision
+          />
+          <Objetivos
+          />
+          <Eslogan
+          />
+          <Empresarial
+          />
+          <Estudios
+          />
+          <Organigrama
+          />
+          <Desarrollo
+          />
+          <footer>
+            <p>Todos los derechos reservador &copy;</p>  
+          </footer>
+          
+
+      </div>
+    </Fragment>
   );
 }
 
