@@ -50,7 +50,7 @@ function App() {
             <Organigrama
             />
             </div>
-            <div className="row">
+          <div className="row">
             <Desarrollo
             />
           </div>
