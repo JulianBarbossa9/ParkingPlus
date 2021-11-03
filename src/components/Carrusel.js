@@ -1,9 +1,10 @@
 import React, {Fragment, useRef, useEffect} from 'react';
-import img1 from './../images/retoV1FE.jpg'
-import img2 from './../images/retoV2FE.jpg'
-import img3 from './../images/retoV3FE.jpg'
-import flecha1 from './../images/left-arrow.png'
-import flecha2 from './../images/right-arrow.png'
+import img1 from './../images/retoV1FE.jpg';
+import img2 from './../images/retoV2FE.jpg';
+import img3 from './../images/retoV3FE.jpg';
+import flecha1 from './../images/left-arrow.png';
+import flecha2 from './../images/right-arrow.png';
+import arrow from './../images/arrow.svg';
 
 
 
@@ -119,10 +120,10 @@ const Carrusel = () => {
                 
                 <div className="controles">
                     <button className="btn-carrusel" onClick={anterior}>
-                        <img src={flecha1} alt="flechaIzq" className="izquierda"/>
+                        <img src={arrow} alt="flechaIzq" className="izquierda"/>
                     </button>
                     <button className="btn-carrusel derecho" onClick={siguiente}>
-                        <img src={flecha2} alt="flechaDer"/>
+                        <img src={arrow} alt="flechaDer" className="derechoimg"/>
                     </button>
                 </div>
 

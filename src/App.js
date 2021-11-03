@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-import React, {Fragment} from 'react';
+import React, {Fragment, useState,useEffect} from 'react';
 import Header from './components/Header';
 import logo from './images/parkin1.png';
 import Carrusel from './components/Carrusel';
@@ -13,9 +13,7 @@ import Organigrama from './components/Organigrama';
 import Desarrollo from './components/Desarrollo';
 
 function App() {
-  
-  
-  
+
   
   return (
     <Fragment>
@@ -27,10 +25,7 @@ function App() {
           />
 
           <Carrusel
-
-
           />
-
           <Mision
           />
           <Vision

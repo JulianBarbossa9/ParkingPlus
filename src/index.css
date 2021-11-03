@@ -7,6 +7,7 @@ font-family: 'Prompt', sans-serif;
   
 }
 
+
 .container{
   display: grid;
   max-width: 100%;
@@ -83,6 +84,7 @@ img{
 }
 
 .controles{
+  display: flex;
   position: absolute;
   top:0;
   z-index: 20;
@@ -111,10 +113,17 @@ img{
   background: rgba(63, 61, 61, 0.2);
   fill: azure;
 } */
+.izquierda{
+  height: 2.5rem;
+}
+.derechoimg{
+  height: 2.5rem;
+}
 
 
 .derecho{
   right: 0;
+  transform: rotate(180deg);
   /* left: 0; */
 }
 
@@ -212,12 +221,24 @@ h2{
 
 h3{
   margin: 30px 0;
+  text-align: center;
+}
+
+.slogan{
+  font-weight: bolder;
+  font-size: 50px;
+
+text-shadow:  12px 12px 16px #828282,
+             -12px -12px 16px #ffffff;
 }
 
 .eslogan {
+  
   grid-area: eslogan;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   /* border: 2px solid red; */
   font-size: 25px;
 }
@@ -229,9 +250,19 @@ h3{
   align-items: center;
   /* border: 2px solid red; */
   font-size: 25px;
+
+
+  border-radius: 50px;
+box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+}
+.imgLogo{
+  position: absolute;
+  max-width: 100%;
 }
 
 .img{
+  
   height: 500px;
   width: 500px;
   display: flex;
@@ -239,6 +270,13 @@ h3{
   align-items: center;
   border: 3px solid rgb(15, 15, 15);
   border-radius: 100px ;
+  background: rgba( 248, 248, 248, 0.15 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 11.5px );
+-webkit-backdrop-filter: blur( 11.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+  
 }
 
 .estudioFacti{
