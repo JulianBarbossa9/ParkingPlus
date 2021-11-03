@@ -2,28 +2,28 @@ import React,{Fragment} from 'react';
 
 const Desarrollo = () => {
     return (  
-        <Fragment>
-            <div className="tipoEmpresa">
+        <div className="row">
+            <div className="tipoEmpresa col s12 m4">
                 <div className="containerUno">
                     <p>lorem ipsum
                     </p>
                 </div>
             </div>
 
-            <div className="talentoHumano">
+            <div className="talentoHumano col s12 m4">
                 <div className="containerDos">
                     <p>lorem ipsum
                     </p>
                 </div>
             </div>
 
-            <div className="costoDesarrollo">
+            <div className="costoDesarrollo col s12 m4">
                 <div className="containerTres">
                     <p>lorem ipsum
                     </p>
                 </div>
             </div>
-        </Fragment>
+        </div>
     );
 }
  

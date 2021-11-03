@@ -17,8 +17,8 @@ function App() {
   
   return (
     <Fragment>
-      <div className = "container">
-        <div className = "mainLogo">
+      <div className = "">
+        <div className = "mainLogo brand-logo">
           <img src = {logo} alt="logoParking +" />
         </div>  
           <Header
@@ -26,22 +26,34 @@ function App() {
 
           <Carrusel
           />
-          <Mision
-          />
-          <Vision
-          />
+          <div className="row">
+            <Mision
+            />
+            <Vision
+            />
+          </div>
+          <div className="row">
           <Objetivos
           />
-          <Eslogan
-          />
-          <Empresarial
-          />
-          <Estudios
-          />
-          <Organigrama
-          />
-          <Desarrollo
-          />
+          </div>
+          <div className="row">
+            <Eslogan
+            />
+            <Empresarial
+            />
+          </div>
+          <div className="row">
+            <Estudios
+            />
+            </div>
+            <div className="row">
+            <Organigrama
+            />
+            </div>
+            <div className="row">
+            <Desarrollo
+            />
+          </div>
           <footer>
             <p>Todos los derechos reservador &copy;</p>  
           </footer>

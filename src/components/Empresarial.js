@@ -24,7 +24,7 @@ const Empresarial = () => {
     //  });
     return (  
         <Fragment>
-            <div className="img-empre ">
+            <div className="img-empre col s12 m6 ">
                 <h3>Imagen Empresarial</h3>
                 <div className="img">
                     <img src={nave} alt = "logoParking" style={{transform: `translate(${position.x/17}px,${position.y/17}px)`}}  className="imgLogo"/>

@@ -5,26 +5,23 @@
   /* font-family: 'Lato', sans-serif; */
 font-family: 'Prompt', sans-serif;
   
+
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.brand-logo{
+  padding: 2rem;
+}
+.row{
+  height: 100vh !important;
+}
+.topto{
+  min-height: 100%;
 }
 
 
-.container{
-  display: grid;
-  max-width: 100%;
-  grid-template-areas: "mainLogo mainLogo mainLogo mainLogo mainLogo mainLogo "
-                        "nav nav nav nav nav nav"
-                        "carrusel carrusel carrusel carrusel carrusel carrusel"
-                        "mision mision mision text-mision text-mision text-mision"
-                        "text-vision text-vision text-vision vision vision vision"
-                        "objetivos objetivos objetivos objetivos objetivos objetivos"
-                        "eslogan eslogan eslogan img-empre img-empre img-empre"
-                        "estudioFacti estudioFacti estudioMerca estudioMerca estudioEstadofinan estudioEstadofinan"
-                        "organigrama organigrama organigrama organigrama organigrama organigrama"
-                        "tipoEmpresa tipoEmpresa talentoHumano talentoHumano costoDesarrollo costoDesarrollo"
-                        "footer footer footer footer footer footer";
-  grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
-  grid-template-rows: 130px 80px 700px 350px 350px 350px 550px 550px 550px 500px 100px;
-}
 
 img{
   width: auto;

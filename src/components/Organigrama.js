@@ -2,11 +2,11 @@ import React,{Fragment} from 'react';
 
 const Organigrama = () => {
     return (  
-        <Fragment>
+        <div className="col s12">
             <div className="organigrama">
                 <h4>ORGANIGRAMA</h4>
             </div>
-        </Fragment>
+        </div>
     );
 }
  

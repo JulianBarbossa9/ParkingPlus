@@ -94,7 +94,7 @@ const Carrusel = () => {
 
     return (  
         <Fragment>
-            <div className="carrusel">
+            <div className="carrusel  row">
                 <div className="contendorSlide" ref={slideshow}>
                     <div className="infoCarrusel">
                         <a href="https://coldomotica.com">
