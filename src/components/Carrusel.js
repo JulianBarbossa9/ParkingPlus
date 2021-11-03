@@ -2,8 +2,6 @@ import React, {Fragment, useRef, useEffect} from 'react';
 import img1 from './../images/retoV1FE.jpg';
 import img2 from './../images/retoV2FE.jpg';
 import img3 from './../images/retoV3FE.jpg';
-import flecha1 from './../images/left-arrow.png';
-import flecha2 from './../images/right-arrow.png';
 import arrow from './../images/arrow.svg';
 
 
@@ -94,7 +92,7 @@ const Carrusel = () => {
 
     return (  
         <Fragment>
-            <div className="carrusel  row">
+            <div className="carrusel row">
                 <div className="contendorSlide" ref={slideshow}>
                     <div className="infoCarrusel">
                         <a href="https://coldomotica.com">
@@ -103,6 +101,7 @@ const Carrusel = () => {
                             <img src={img1} alt="img1" className="img-carrusel"/>
                         
                         </a>
+                        <p>Hola</p>
                     </div>
 
                     <div className="infoCarrusel">

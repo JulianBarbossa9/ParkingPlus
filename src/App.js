@@ -1,7 +1,7 @@
-// import logo from './logo.svg';
-import React, {Fragment, useState,useEffect} from 'react';
+import React, {Fragment, useState} from 'react';
 import Header from './components/Header';
-import logo from './images/parkin1.png';
+import BackgroundShapes from './components/BackgroundShapes';
+import styled from '@emotion/styled';
 import Carrusel from './components/Carrusel';
 import Mision from './components/Mision';
 import Vision from './components/Vision';
@@ -12,15 +12,36 @@ import Estudios from './components/Estudios';
 import Organigrama from './components/Organigrama';
 import Desarrollo from './components/Desarrollo';
 
+
+//Declarar style component background
+const Bg = styled.div`
+  height:100vh;
+  position:absolute;
+  z-index: -2;
+  background-attachment:fixed ;
+  background-repeat: no-repeat;
+  background: rgb(21,246,255);
+  background: -moz-linear-gradient(90deg, rgba(21,246,255,1) 0%, rgba(0,93,98,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(21,246,255,1) 0%, rgba(0,93,98,1) 100%);
+  background: linear-gradient(90deg, rgba(21,246,255,1) 0%, rgba(0,93,98,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#15f6ff",endColorstr="#005d62",GradientType=1);
+`;
+
+
 function App() {
 
+        const mine=[1,2,3,4,5,0,0,0,0];
+        const pages=[1,2,3,4,5,6];
+        console.log(mine);
   
   return (
     <Fragment>
+      <BackgroundShapes
+        number={mine}
+        pages={pages}
+      />
       <div className = "">
-        <div className = "mainLogo brand-logo">
-          <img src = {logo} alt="logoParking +" />
-        </div>  
+
           <Header
           />
 

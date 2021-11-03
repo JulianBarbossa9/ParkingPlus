@@ -16,12 +16,10 @@ const Empresarial = () => {
     let position;
 
     position=useMousePosition();
-    //  setPosition({
+
     position.x= (position.x-dimensions.width/4);
     position.y= (position.y-dimensions.height/2);
-    //position.x=position.y=0;
-    console.log(position);
-    //  });
+
     return (  
         <Fragment>
             <div className="img-empre col s12 m6 ">

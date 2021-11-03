@@ -4,18 +4,31 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   /* font-family: 'Lato', sans-serif; */
 font-family: 'Prompt', sans-serif;
-  
-
 }
 html, body {
   height: 100%;
   margin: 0;
 }
+body{
+  background-attachment:fixed ;
+  background-repeat: no-repeat;
+  background: rgb(21,246,255);
+  background: -moz-linear-gradient(90deg, rgba(21,246,255,1) 0%, rgba(0,93,98,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(21,246,255,1) 0%, rgba(0,93,98,1) 100%);
+  background: linear-gradient(90deg, rgba(21,246,255,1) 0%, rgba(0,93,98,1) 100%);/*
+
+  /*background: rgb(165,255,174);
+  background: -moz-linear-gradient(45deg, rgba(165,255,174,1) 0%, rgba(0,64,14,1) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(165,255,174,1) 0%, rgba(0,64,14,1) 100%);
+  background: linear-gradient(45deg, rgba(165,255,174,1) 0%, rgba(0,64,14,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a5ffae",endColorstr="#00400e",GradientType=1);*/
+}
 .brand-logo{
-  padding: 2rem;
+  padding: 1rem;
 }
 .row{
   height: 100vh !important;
+  z-index: 1;
 }
 .topto{
   min-height: 100%;
@@ -23,13 +36,13 @@ html, body {
 
 
 
+
 img{
   width: auto;
-  height: 100px;
+  height: 80px;
 }
 
 .mainLogo{
-  grid-area: mainLogo;
   /* border: 2px solid red; */
   display: flex;
   justify-content: center;
@@ -38,17 +51,53 @@ img{
 }
 
 .nav{
-  grid-area: nav;
+  background-color: #294f6300;
+  box-shadow: none;
+  width: auto;
+}
+
+.navCont{
   /* border: 2px solid red; */
   display: flex;
-  justify-content: center;
-  background-color: rgb(84, 223, 158);
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  height: auto;
+  padding: 1rem;
+  
   font-size: 20px;
+  
+    /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+
+}
+
+.circle{
+  
+  z-index: -1;
+  width: 140px;
+    height: 140px;
+    background: blue; 
+    -moz-border-radius: 70px; 
+    -webkit-border-radius: 70px; 
+    border-radius: 70px;
+    position: absolute;
+  background: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
 }
 
 .nav-link{
   text-decoration: none;
-  color: white;
+  /*color: #294f63;*/
+  color: whitesmoke;
   /* color: black; */
 }
 
