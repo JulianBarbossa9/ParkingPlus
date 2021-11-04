@@ -1,8 +1,10 @@
 import React, {Fragment, useRef, useEffect} from 'react';
+import arrow from './../images/arrow.svg';
+import ImageCarusel from './ImageCarrusel';
 import img1 from './../images/retoV1FE.jpg';
 import img2 from './../images/retoV2FE.jpg';
 import img3 from './../images/retoV3FE.jpg';
-import arrow from './../images/arrow.svg';
+
 
 
 
@@ -23,7 +25,7 @@ const Carrusel = () => {
             const primerElemento = slideshow.current.children[0];
 
             // Creamos la transición del slideshow
-            slideshow.current.style.transition = `3000ms ease-out all`;
+            slideshow.current.style.transition = `2000ms ease-out all`;
             
             //Calculo el tamaño de la imagen para saber cuanto la voy a desplazar
             const tamaSlide = slideshow.current.children[0].offsetWidth;
@@ -64,7 +66,7 @@ const Carrusel = () => {
             slideshow.current.style.transform = `translateX(-${tamaSlide}px)`;
 
             setTimeout(() => {
-                slideshow.current.style.transition = '3000ms ease-out all';
+                slideshow.current.style.transition = '2000ms ease-out all';
                 slideshow.current.style.transform = `translateX(0)`;
             }, 30)
         }
@@ -87,34 +89,72 @@ const Carrusel = () => {
             },4000);
         });
     },[]);
-
-
-
-    return (  
-        <Fragment>
-            <div className="carrusel row">
-                <div className="contendorSlide" ref={slideshow}>
-                    <div className="infoCarrusel">
-                        <a href="https://coldomotica.com">
-                            {/* <h2 className="nosotros"> Nosotros</h2>
-                            <p>Ingenieros en Multimedia</p> */}
-                            <img src={img1} alt="img1" className="img-carrusel"/>
-                        
-                        </a>
-                        <p>Hola</p>
-                    </div>
+    /*    <div className="infoCarrusel">
+                            <a href="https://coldomotica.com">
+                                <img src={img1} alt="img1" className="img-carrusel"/>
+                            </a>
+                            <p>Hola</p>
+                        </div>
+                    
 
                     <div className="infoCarrusel">
                         <a href="https://coldomotica.com">
                             <img src={img2} alt="img1" className="img-carrusel"/>
                         </a>
-                    </div>
+                    </div>*/ 
 
-                    <div className="infoCarrusel">
-                        <a href="https://coldomotica.com">
-                            <img src={img3} alt="img1" className="img-carrusel"/>
-                        </a>
-                    </div>
+
+    /* <ImageCarusel
+                        img={img1}
+                        
+                        alt={imagenes[0].alt}
+                        description={imagenes[0].description}
+                    />  
+                    <ImageCarusel
+                        img={img2}
+                        
+                        alt={imagenes[1].alt}
+                        description={imagenes[1].description}
+                    />   
+                    <ImageCarusel
+                        img={img3}
+                        
+                        alt={imagenes[2].alt}
+                        description={imagenes[2].description}
+                    />   */
+
+const imagenes=[
+    {   src: img1,
+        alt: 'imagen1',
+        description: 'aloha1'   
+    },
+    {   
+        src: img2,
+        alt: 'imagen2',
+        description: 'aloha2'   
+    },
+    {   
+        src: img3,
+        alt: 'imagen3',
+        description: 'aloha3'   
+    },
+];
+ const renderImagenes=(imagenes)=>{
+    ;
+ }
+
+    return (  
+        <Fragment>
+            <div className="carrusel row">
+                <div className="contendorSlide" ref={slideshow}>
+                    {imagenes.map((imagen,index)=>(
+                        <ImageCarusel
+                                src={imagen.src}
+                                alt={imagen.alt}
+                                description={imagen.description}
+                                key={index} 
+                        />
+                    ))}        
                 </div>
                 
                 <div className="controles">

@@ -29,6 +29,11 @@ const BackgroundShapes = ({number,pages}) => {
                     displaceFactor={pages[4]}
                 />
             ))}
+            {number.map(()=>(
+                <Shapes
+                    displaceFactor={pages[5]}
+                />
+            ))}
         </div>
      );
 }
