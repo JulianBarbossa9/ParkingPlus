@@ -1,29 +1,21 @@
 import React from 'react';
 
     const ImageCarusel = ({src,alt,description}) => {
-        let image;  
-       /* if(img===1)
-            image=img2;
-        if(img===0)
-            image=img1;
-        if(img===2)
-            image=img3;*/
-            
+
+            /*<div className="overlapGlass">
+                    <a href="https://coldomotica.com">
+                        
+                    </a>
+                    <p className="glassP">{description}</p>
+                </div>    */
         return ( 
             <div className="infoCarrusel">
-                 <div className="glassImageCont">
-                    <div className="overlapGlass">
-                        <a href="https://coldomotica.com">
-                            <img src={src} alt={alt} className="img-carrusel"/>
-                        </a>
-                    </div>
-                    <div className="overlapGlass1">
-                        <a href="https://coldomotica.com">
-                            <img src={src} alt={alt} className="img-carrusel"/>
-                        </a>
+                <dic className="glassImageCont">
+                    <div className="overLapGlass">
+                        <img src={src} alt={alt} className="img-carrusel"/>
                         <p className="glassP">{description}</p>
                     </div>
-                </div> 
+                </dic>
                 
             </div>
          );

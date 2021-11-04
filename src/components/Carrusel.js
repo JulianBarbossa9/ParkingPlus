@@ -140,7 +140,14 @@ const imagenes=[
     },
 ];
  const renderImagenes=(imagenes)=>{
-    ;
+    imagenes.map((imagen,index)=>(
+        <ImageCarusel
+                src={imagen.src}
+                alt={imagen.alt}
+                description={imagen.description}
+                key={index} 
+        />
+    ));
  }
 
     return (  

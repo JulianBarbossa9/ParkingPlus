@@ -4,33 +4,39 @@ import Shapes from './Shapes';
 const BackgroundShapes = ({number,pages}) => {
     return ( 
         <div>
-            {number.map(()=>(
+            {number.map((index)=>(
                 <Shapes
+                key={index}
                     displaceFactor={pages[0]}
                 />
             ))}
-            {number.map(()=>(
+            {number.map((index)=>(
                 <Shapes
+                key={index}
                     displaceFactor={pages[1]}
                 />
             ))}
-            {number.map(()=>(
+            {number.map((index)=>(
                 <Shapes
+                key={index}
                     displaceFactor={pages[2]}
                 />
             ))}
-            {number.map(()=>(
+            {number.map((index)=>(
                 <Shapes
+                key={index}
                     displaceFactor={pages[3]}
                 />
             ))}
-            {number.map(()=>(
+            {number.map((index)=>(
                 <Shapes
+                key={index}
                     displaceFactor={pages[4]}
                 />
             ))}
-            {number.map(()=>(
+            {number.map((index)=>(
                 <Shapes
+                key={index}
                     displaceFactor={pages[5]}
                 />
             ))}

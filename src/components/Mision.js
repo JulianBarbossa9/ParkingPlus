@@ -2,7 +2,7 @@ import React from 'react';
 
 const Mision = () => {
     return (  
-        <div className="col s12 m12 l6">
+        <div className="container col s12 m12 l6">
             <div className="mision">
                 <h3>Misión</h3>
             </div>

@@ -33,7 +33,7 @@ function App() {
 
           <Carrusel
           />
-          <div className="row">
+          <div className="row valign-wrapper">
             <Mision
             />
             <Vision
