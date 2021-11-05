@@ -37,7 +37,7 @@ body{
 
 
 
-img{
+.logoHeader{
   width: auto;
   height: 80px;
 }
@@ -363,8 +363,8 @@ text-shadow:  12px 12px 16px #828282,
 
 
   border-radius: 50px;
-box-shadow:  20px 20px 60px #bebebe,
-             -20px -20px 60px #ffffff;
+  box-shadow:  20px 20px 60px #bebebe,
+              -20px -20px 60px #ffffff;
 }
 .imgLogo{
   position: absolute;
@@ -381,21 +381,21 @@ box-shadow:  20px 20px 60px #bebebe,
   border: 3px solid rgb(15, 15, 15);
   border-radius: 100px ;
   background: rgba( 248, 248, 248, 0.15 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 11.5px );
--webkit-backdrop-filter: blur( 11.5px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 11.5px );
+  -webkit-backdrop-filter: blur( 11.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
   
 }
 
-.estudioFacti{
+/* .estudioFacti{
   /* border: 2px solid red; */
-  grid-area:estudioFacti ;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
+  /* grid-area:estudioFacti ; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* text-align: center; */
+/*  */
 
 .estudioMerca{
   grid-area:estudioMerca;
@@ -453,3 +453,40 @@ footer{
   border: 2px solid red;
 }
 
+
+
+.card {
+  /* border: 2px solid red; */
+    width: 500px;
+    height: 700px;
+    color: white;
+    border-radius: 25px;
+    backdrop-filter: blur(12px);
+    background-color: rgba(0,191,255, 0.062);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 2px rgba(255,255,255,0.4) solid;
+    border-bottom: 2px rgba(40,40,40,0.35) solid;
+    border-right: 2px rgba(40,40,40,0.35) solid;
+    margin: 0 40px;
+}
+
+.card-image{
+  /* height: auto; */
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:0px 50px;
+}
+
+.card-title, h5{
+  font-size: 40px;
+  font-weight: bold;
+}
+
+
+.lista1{
+  list-style-image: url("https://mdn.mozillademos.org/files/11979/starsolid.gif");
+  list-style-position: inside;
+  margin: 15px 70px;
+}

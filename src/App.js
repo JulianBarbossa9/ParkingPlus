@@ -26,19 +26,20 @@ function App() {
         number={mine}
         pages={pages}
       />
-      <div className = "">
-
+    
           <Header
           />
 
           <Carrusel
           />
+
           <div className="row valign-wrapper">
             <Mision
             />
             <Vision
             />
           </div>
+          
           <div className="row">
           <Objetivos
           />
@@ -66,7 +67,7 @@ function App() {
           </footer>
           
 
-      </div>
+     
     </Fragment>
   );
 }

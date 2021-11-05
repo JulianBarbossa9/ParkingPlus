@@ -8,7 +8,7 @@ const Header = () => {
             <div  className="navCont">
                 <div>
                     <a href="!#" className = "mainLogo brand-logo">
-                        <img src = {logo} alt="logoParking +" />
+                        <img src={logo} alt="logoParking +"  className="logoHeader"/>
                     </a> 
                 </div>
                 <nav  className="nav">
