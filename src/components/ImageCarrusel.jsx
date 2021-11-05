@@ -10,12 +10,12 @@ import React from 'react';
                 </div>    */
         return ( 
             <div className="infoCarrusel">
-                <dic className="glassImageCont">
+                <div className="glassImageCont">
                     <div className="overLapGlass">
                         <img src={src} alt={alt} className="img-carrusel"/>
                         <p className="glassP">{description}</p>
                     </div>
-                </dic>
+                </div>
                 
             </div>
          );
