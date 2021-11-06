@@ -393,7 +393,7 @@ text-shadow:  12px 12px 16px #828282,
   /* text-align: center; */
 /*  */
 .estudioFacti{
-  border: 2px solid red;
+  /* border: 2px solid red; */
   display: flex;
   justify-content: center;
   align-items: center;
