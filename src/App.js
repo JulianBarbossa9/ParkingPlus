@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React, {Fragment, useState, useEffect} from 'react';
 import Header from './components/Header';
 import BackgroundShapes from './components/BackgroundShapes';
 import styled from '@emotion/styled';
@@ -19,13 +19,28 @@ function App() {
   const mine=[1,2,3,4,5,0,0,0,0];
   const pages=[1,2,3,4,5,6];
 
-  
+  /**
+   * Paralax 
+   */
+  const [offsetY , setOffsetY] = useState(0);
+  const handleScroll = () => setOffsetY(window.pageYOffset);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  },[]);
+
+
   return (
     <Fragment>
-      <BackgroundShapes
-        number={mine}
-        pages={pages}
-      />
+      <div>
+        <BackgroundShapes
+          number={mine}
+          pages={pages}
+          style={{transform:`translateY(${offsetY * 0.00005}px)`}}
+        />
+      </div>  
     
           <Header
           />
