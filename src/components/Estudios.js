@@ -42,12 +42,12 @@ const cards = [
 
 const Estudios = () => {
     return (  
-        <div className="row">
+        <div className="row center-align">
             
-            <div className="estudioFacti col s12  center-align">
+            <div className="estudioFacti col s10 m4 l12 ">
                     {
                         cards.map(card => (
-                            <div className="tarjetaUno col s4" key={card.id} >
+                            <div className="tarjetaUno " key={card.id} >
                                 <Card 
                                     title={card.title}  
                                     imageSource={card.image} 
