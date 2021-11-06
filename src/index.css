@@ -314,15 +314,52 @@ body{
 h2{
   margin: 20px 0;
   font-size: 40px;
+  font-weight: bold;
+  color:white;
 }
 
 .objetivos{
   grid-area: objetivos;
-  /* border: 2px solid red; */
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  height: 650px;
+  color: white;
+}
+
+.videochevere{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.container-imgChevere{
+  width: auto;
+  height: auto;
+  /* border: 2px solid rgb(0, 255, 64); */
+  backdrop-filter: blur(12.5px);
+  -webkit-backdrop-filter:blur(12.5px);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  background-image: linear-gradient(155deg, rgba(255, 255, 255, 0.43), rgba(255, 255, 255, 0));
+  border-radius: 23px;
+  border-top: 2px solid rgba( 255, 255, 255, 0.42 );
+  border-left: 2px solid rgba( 255, 255, 255, 0.42 );
+}
+
+.container-img{
+  width: auto;
+  height: 650px;
+
+  border-radius: 50px;
+  margin: 20px 20px;
+}
+
+.lista2{
+  list-style-image: url("https://mdn.mozillademos.org/files/11979/starsolid.gif");
+  list-style-position: inside;
+  margin: 15px 70px;
 }
 
 h3{
