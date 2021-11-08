@@ -1,7 +1,6 @@
 import React, {Fragment} from 'react';
 import Header from './components/Header';
 import BackgroundShapes from './components/BackgroundShapes';
-import styled from '@emotion/styled';
 import Carrusel from './components/Carrusel';
 import Mision from './components/Mision';
 import Vision from './components/Vision';
@@ -11,8 +10,7 @@ import Empresarial from './components/Empresarial';
 import Estudios from './components/Estudios';
 import Organigrama from './components/Organigrama';
 import Desarrollo from './components/Desarrollo';
-
-
+import styled from '@emotion/styled';
 
 function App() {
 
@@ -32,12 +30,12 @@ function App() {
 
           <Carrusel
           />
-          <div className="row MV">
+
             <Mision
             />
             <Vision
             />
-          </div>
+
           
           <div className="row">
           <Objetivos
@@ -49,10 +47,10 @@ function App() {
             <Empresarial
             />
           </div>
-          <div className="row">
+
             <Estudios
             />
-            </div>
+
             <div className="row">
             <Organigrama
             />

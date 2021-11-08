@@ -2,8 +2,8 @@ import React from 'react';
 
 const Card = ({title, imageSource, text, item1, item2, item3, alt}) => {
     return (  
-      
-            <div className="card">
+        <div className="">
+            <div className="card ">
                 <div className="card-image">
                     <img src={imageSource} alt={alt}/>
                     <h5 className="card-title" className="center-align">{title}</h5>
@@ -21,6 +21,7 @@ const Card = ({title, imageSource, text, item1, item2, item3, alt}) => {
                     </ul>
                 </div>
             </div>
+        </div>
         
     );
 }

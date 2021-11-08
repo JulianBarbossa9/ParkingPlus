@@ -27,15 +27,12 @@ body{
   padding: 1rem;
 }
 .row{
- 
+  min-height: 50vh;
   z-index: 1;
 }
 
 .fullh{
   height: 100vh !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .topto{
@@ -134,7 +131,7 @@ body{
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  position: relative;
+
   /* margin: 0 300px; */
 }
 
@@ -176,6 +173,7 @@ body{
 
 .overLapGlass{
   padding: 1rem;
+  margin-left: 2rem;
 }
 
 .glassImageCont{
@@ -237,7 +235,6 @@ body{
 
 .infoCarrusel{
   display: flex;
-  position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -246,26 +243,15 @@ body{
   transition: .3s ease all;/**/
   z-index: 10;/**/
   max-height: 921px;
-
-
-  
-}
-.imageCarrselContainer{
-  display:flex;
 }
 
-/* .derecha{
-  right: 0;
-}
-.izquierda{
-  left: 0;
-} */
 
 
 
 .contendorSlide{
   display: flex;
-  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -283,7 +269,7 @@ body{
 .glassContainer{
   padding-top: 2rem;
   max-width: 600px;
-  
+  margin: 2rem;
 
 
 
@@ -308,6 +294,15 @@ body{
   padding: 0 120px;
   text-justify: justify;
  
+}
+
+
+.flow-text{
+  text-align: justify;
+}
+.textContainer{
+  margin-top: 2rem;
+  padding-top: 2rem;
 }
 
 .vision{
@@ -343,7 +338,7 @@ h2{
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  height: 100%;
 }
 
 .objCont{
@@ -359,6 +354,14 @@ h2{
   justify-content: center;
   align-items: center;
  
+}
+
+.container-objetos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
 }
 
 .container-imgChevere{
@@ -537,6 +540,7 @@ footer{
 
 .card {
   /* border: 2px solid red; */
+
     width: 500px;
     height: 700px;
     color: white;
@@ -547,7 +551,7 @@ footer{
     border: 2px rgba(255,255,255,0.4) solid;
     border-bottom: 2px rgba(40,40,40,0.35) solid;
     border-right: 2px rgba(40,40,40,0.35) solid;
-    margin: 0 40px;
+    margin: 5rem 40px;
     
 }
 
@@ -570,4 +574,21 @@ footer{
   list-style-image: url("https://mdn.mozillademos.org/files/11979/starsolid.gif");
   list-style-position: inside;
   margin: 15px 70px;
+}
+
+
+/*mi responsive*/
+
+.MyRow{
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 1150px){
+  .MyRow{
+    
+  }
 }
