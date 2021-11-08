@@ -47,7 +47,8 @@ body{
 
 img{
   width: auto;
-  height: 80px;
+  height: 150px;
+
 }
 
 .mainLogo{
@@ -332,6 +333,7 @@ img{
 h2{
   margin: 20px 0;
   font-size: 40px;
+  text-align: center;
 }
 
 .objetivos{
@@ -341,6 +343,12 @@ h2{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
+}
+
+.objCont{
+  padding: 2rem;
+  text-align: justify;
 }
 
 h3{
@@ -352,11 +360,11 @@ h3{
   font-weight: bolder;
   font-size: 50px;
 
-text-shadow:  12px 12px 16px #828282,
-             -12px -12px 16px #ffffff;
 }
 
 .eslogan {
+
+
   
   grid-area: eslogan;
   display: flex;
@@ -365,6 +373,10 @@ text-shadow:  12px 12px 16px #828282,
   align-items: center;
   /* border: 2px solid red; */
   font-size: 25px;
+
+
+
+
 }
 
 .img-empre {
@@ -374,12 +386,20 @@ text-shadow:  12px 12px 16px #828282,
   align-items: center;
   /* border: 2px solid red; */
   font-size: 25px;
+  margin: 0 !important;
 
 
-  border-radius: 50px;
-box-shadow:  20px 20px 60px #bebebe,
-             -20px -20px 60px #ffffff;
+
+  filter: drop-shadow(0 0 20px #1b5e20);
+
+
+
 }
+
+.empr{
+
+}
+
 .imgLogo{
   position: absolute;
   max-width: 100%;
@@ -392,15 +412,7 @@ box-shadow:  20px 20px 60px #bebebe,
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid rgb(15, 15, 15);
-  border-radius: 100px ;
-  background: rgba( 248, 248, 248, 0.15 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 11.5px );
--webkit-backdrop-filter: blur( 11.5px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-  
+
 }
 
 .estudioFacti{

@@ -43,7 +43,7 @@ function App() {
           <Objetivos
           />
           </div>
-          <div className="row">
+          <div className="row empr">
             <Eslogan
             />
             <Empresarial
