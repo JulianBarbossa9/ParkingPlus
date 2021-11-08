@@ -26,8 +26,7 @@ function App() {
         number={mine}
         pages={pages}
       />
-      <div className = "">
-
+    
           <Header
           />
 
@@ -39,6 +38,7 @@ function App() {
             <Vision
             />
           </div>
+          
           <div className="row">
           <Objetivos
           />
@@ -66,7 +66,7 @@ function App() {
           </footer>
           
 
-      </div>
+     
     </Fragment>
   );
 }
