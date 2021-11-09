@@ -10,18 +10,14 @@ html, body {
   margin: 0;
 }
 body{
-  background-attachment:fixed ;
+   background-attachment:fixed ;
   background-repeat: no-repeat;
   background: rgb(21,246,255);
   background: -moz-linear-gradient(90deg, rgba(21,246,255,1) 0%, rgba(0,93,98,1) 100%);
   background: -webkit-linear-gradient(90deg, rgba(21,246,255,1) 0%, rgba(0,93,98,1) 100%);
-  background: linear-gradient(90deg, rgba(21,246,255,1) 0%, rgba(0,93,98,1) 100%);/*
+  background: linear-gradient(90deg, rgba(21,246,255,1) 0%, rgba(0,93,98,1) 100%); 
 
-  /*background: rgb(165,255,174);
-  background: -moz-linear-gradient(45deg, rgba(165,255,174,1) 0%, rgba(0,64,14,1) 100%);
-  background: -webkit-linear-gradient(45deg, rgba(165,255,174,1) 0%, rgba(0,64,14,1) 100%);
-  background: linear-gradient(45deg, rgba(165,255,174,1) 0%, rgba(0,64,14,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a5ffae",endColorstr="#00400e",GradientType=1);*/
+
 }
 .brand-logo{
   padding: 1rem;
@@ -84,12 +80,12 @@ body{
 .circle{
   
   z-index: -1;
-  width: 140px;
-    height: 140px;
+  width: 250px;
+    height: 250px;
     background: blue; 
     -moz-border-radius: 70px; 
     -webkit-border-radius: 70px; 
-    border-radius: 70px;
+    border-radius: 150px;
     position: absolute;
   background: rgba(255, 255, 255, 0.16);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -97,6 +93,13 @@ body{
   -webkit-backdrop-filter: blur(7.7px);
   filter: blur(5px);
   -webkit-filter: blur(5px);
+
+}
+
+
+.textContainer{
+  margin-top: 2rem;
+  padding-top: 2rem;
 
 }
 
@@ -174,24 +177,24 @@ body{
 .overLapGlass{
   padding: 1rem;
   margin-left: 2rem;
+  position: relative;
 }
 
 .glassImageCont{
   margin: 13rem;
   padding: 1rem;
-
+  position: relative;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  border-radius: 15px;
-  backdrop-filter: blur(20px);
-  background-color: rgba(255,255,255, 0.354);
-  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
-  border: 2px rgba(255,255,255,0.4) solid;
-  border-bottom: 2px rgba(40,40,40,0.35) solid;
-  border-right: 2px rgba(40,40,40,0.35) solid;
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .blurImg{
@@ -234,6 +237,7 @@ body{
 }
 
 .infoCarrusel{
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -300,10 +304,6 @@ body{
 .flow-text{
   text-align: justify;
 }
-.textContainer{
-  margin-top: 2rem;
-  padding-top: 2rem;
-}
 
 .vision{
   grid-area: vision;
@@ -368,13 +368,7 @@ h2{
   width: auto;
   height: auto;
   /* border: 2px solid rgb(0, 255, 64); */
-  backdrop-filter: blur(12.5px);
-  -webkit-backdrop-filter:blur(12.5px);
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  background-image: linear-gradient(155deg, rgba(255, 255, 255, 0.43), rgba(255, 255, 255, 0));
-  border-radius: 23px;
-  border-top: 2px solid rgba( 255, 255, 255, 0.42 );
-  border-left: 2px solid rgba( 255, 255, 255, 0.42 );
+  
 }
 
 .container-img{
@@ -439,13 +433,13 @@ h3{
 .empr{
 
   border-radius: 50px;
-  box-shadow:  20px 20px 60px #bebebe,
-              -20px -20px 60px #ffffff;
+
 }
 
 .imgLogo{
   position: absolute;
   max-width: 100%;
+  max-width: 30vw;
 }
 
 .img{
@@ -455,15 +449,9 @@ h3{
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid rgb(15, 15, 15);
-  border-radius: 100px ;
-  background: rgba( 248, 248, 248, 0.15 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 11.5px );
-  -webkit-backdrop-filter: blur( 11.5px );
-  border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
   
+  border-radius: 10px;
+
 }
 
 /* .estudioFacti{
@@ -584,11 +572,19 @@ footer{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  
 }
 
-@media (max-width: 1150px){
+@media (max-width: 1000px){
   .MyRow{
-    
+    align-items: center;
+    width: 100vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+
   }
 }

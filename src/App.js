@@ -20,28 +20,29 @@ function App() {
   
   return (
     <Fragment>
-      <BackgroundShapes
+       <BackgroundShapes
         number={mine}
         pages={pages}
-      />
-    
+      /> 
+      <div className="row1">
           <Header
           />
 
           <Carrusel
           />
-
+          </div>
+          <div className="row2">
             <Mision
             />
             <Vision
             />
-
+            </div>
           
           <div className="row">
           <Objetivos
           />
           </div>
-          <div className="row empr">
+          <div className="MyRow empr">
             <Eslogan
             />
             <Empresarial

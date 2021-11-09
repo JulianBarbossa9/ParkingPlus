@@ -4,6 +4,10 @@ import ImageCarusel from './ImageCarrusel';
 import img1 from './../images/retoV1FE.jpg';
 import img2 from './../images/retoV2FE.jpg';
 import img3 from './../images/retoV3FE.jpg';
+import img4 from './../images/BoatNoon.jpg';
+import img5 from './../images/Violin.JPG';
+import img6 from './../images/Planet.JPG';
+
 
 
 
@@ -93,17 +97,38 @@ const Carrusel = () => {
 const imagenes=[
     {   src: img1,
         alt: 'imagen1',
-        description: 'aloha1'   
+        description: 'aloha1' ,
+        href: ' '  
     },
     {   
         src: img2,
         alt: 'imagen2',
-        description: 'aloha2'   
+        description: 'aloha2',
+        href: ' '
     },
     {   
         src: img3,
         alt: 'imagen3',
-        description: 'aloha3'   
+        description: 'aloha3', 
+        href: ' '  
+    },
+    {   
+        src: img4,
+        alt: 'BoatNoon',
+        description: 'Render realizado en cinema 4D y Corona renerer', 
+        href: 'https://www.behance.net/diegoww3'  
+    },
+    {   
+        src: img5,
+        alt: 'ViolinPyro',
+        description: 'Render realizado en Houdini y cinema 4D', 
+        href: 'https://www.behance.net/diegoww3'  
+    },
+    {   
+        src: img6,
+        alt: 'Planet',
+        description: 'Render realizado en cinema 4D y Corona renerer',   
+        href: 'https://www.behance.net/diegoww3'
     },
 ];
     return (  
@@ -112,6 +137,7 @@ const imagenes=[
                 <div className="contendorSlide" ref={slideshow}>
                     {imagenes.map((imagen,index)=>(
                         <ImageCarusel
+                                href={imagen.href}
                                 src={imagen.src}
                                 alt={imagen.alt}
                                 description={imagen.description}

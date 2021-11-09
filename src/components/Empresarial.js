@@ -20,12 +20,16 @@ const Empresarial = () => {
     position.x= (position.x-dimensions.width/4);
     position.y= (position.y-dimensions.height/2);
 
+    const changeImEmpr=()=>{
+        
+    }
+
     return (  
         <Fragment>
-            <div className="col s12 m12 l6">
-                <div className="img-empre fullh">
+            <div className="">
+                <div className="img-empre">
                     <h3>Imagen Empresarial</h3>
-                    <div className="img">
+                    <div className="img" onClick={changeImEmpr}>
                         <img src={nave} alt = "logoParking" style={{transform: `translate(${position.x/17}px,${position.y/17}px)`}}  className="imgLogo"/>
                         <img src={texto} alt = "logoParking" style={{transform: `translate(${position.x/30}px,${position.y/30}px)`}} className="imgLogo" />
                         <img src={plus} alt = "logoParking" style={{transform: `translate(${position.x/20}px,${position.y/20}px)`}} className="imgLogo" />
