@@ -5,22 +5,22 @@ const Desarrollo = () => {
 
     const tarjetas=[
         {
-            titulo: '',
+            titulo: 'Tipo de empresa',
             descripcion: '',
             descripciones:['','']
         },
         {
-            titulo: '',
+            titulo: 'Talento Humano',
             descripcion: '',
             descripciones:['','']
         },
         {
-            titulo: '',
+            titulo: 'Costos de Desarrollo',
             descripcion: '',
             descripciones:['','']
         },
         {
-            titulo: '',
+            titulo: 'Estados Financieros',
             descripcion: '',
             descripciones:['','']
         },

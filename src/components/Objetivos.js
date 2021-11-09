@@ -1,4 +1,4 @@
-import React, {Fragment, useState} from 'react';
+import React, {Fragment} from 'react';
 import ReactPlayer from 'react-player';
 import video from '../images/VideoRiver.mp4';
 // import ima1 from '../images/parkin2.png';

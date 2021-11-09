@@ -12,7 +12,8 @@ const cards = [
         item1:'Comunidad de desarrolladores para solución de problemas y aprendizaje.',
         item2:'Soporte e integración con distintas soluciones tecnológicas.',
         item3:'Estable, escalable desde aplicaciones para dispositivos móviles a páginas web.',
-        alt: 'ImagenTarjeta'
+        alt: 'ImagenTarjeta',
+        content:0
     },
     {
         id: 2,
@@ -22,7 +23,8 @@ const cards = [
         item1:'Desarrollador Web',
         item2:'Marketing Digital',
         item3:'Desarrollador Backend',
-        alt: 'ImagenTarjeta'
+        alt: 'ImagenTarjeta',
+        content:1
     },
     {
         id: 3,
@@ -32,13 +34,14 @@ const cards = [
         item1:'Uno de los principales inconvenientes en la ciudad de Bogotá, es la invasión de las vías públicas por no encontrar un sitio correcto donde estacionarse.',
         item2:'La tecnología permite que los dispositivos móviles, tengan distintas herramientas que ayuden a desarrollar actividades diarias en cualquier momento y espacio.',
         item3:'La tecnología permite que los dispositivos móviles, tengan distintas herramientas que ayuden a desarrollar cualquier actividad.',
-        alt: 'ImagenTarjeta'
+        alt: 'ImagenTarjeta',
+        content:2
     }
 
 
 ]
 
-const Estudios = () => {
+const Estudios = ({modal, setModal, infoModal, setInfoModal}) => {
     return (  
         <div className="MyRow">
                      {cards.map(card => (
@@ -51,6 +54,11 @@ const Estudios = () => {
                                     item2={card.item2} 
                                     item3={card.item3}
                                     alt={card.alt} 
+                                    content={card.content}
+                                    modal={modal}
+                                    setModal={setModal}
+                                    infoModal={infoModal}
+                                    setInfoModal={setInfoModal}
                                 />
                             </div>
                     ))
