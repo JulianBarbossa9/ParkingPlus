@@ -23,14 +23,14 @@ function App() {
   /**
    * Paralax 
    */
-  const [offsetY , setOffsetY] = useState(0);
-  const handleScroll = () => setOffsetY(window.pageYOffset);
+  // const [offsetY , setOffsetY] = useState(0);
+  // const handleScroll = () => setOffsetY(window.pageYOffset);
 
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+  // useEffect(() => {
+  //   window.addEventListener('scroll', handleScroll);
 
-    return () => window.removeEventListener('scroll', handleScroll);
-  },[]);
+  //   return () => window.removeEventListener('scroll', handleScroll);
+  // },[]);
 
 
   return (
@@ -39,7 +39,7 @@ function App() {
         <BackgroundShapes
           number={mine}
           pages={pages}
-          style={{transform:`translateY(${offsetY * 0.00005}px)`}}
+          // style={{transform:`translateY(${offsetY * 0.00005}px)`}}
         />
       </div>  
     
