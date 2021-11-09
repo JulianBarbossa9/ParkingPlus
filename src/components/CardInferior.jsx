@@ -1,6 +1,13 @@
 import React from 'react';
 import img1 from './../images/Hacha2.jpg'
 import { informacion } from './TextoEstudios';
+import styled from '@emotion/styled';
+
+const Parrafo = styled.p`
+    
+    margin-bottom: 2rem;
+    font-size:large;
+`;
 
 const CardInferior = ({ titulo,img ,descripcion,content, alt,modal,setModal,infoModal,setInfoModal}) => {
 
@@ -25,7 +32,7 @@ const CardInferior = ({ titulo,img ,descripcion,content, alt,modal,setModal,info
                 </div>
                 <div className="cardInferiorInfo">
                     <div className="card-content">
-                        <p>{descripcion}</p>
+                        <Parrafo>{descripcion}</Parrafo>
                     </div>
                     <div className="card-action">
                         <button className="cta" onClick={openModal}>

@@ -2,29 +2,31 @@ import React from 'react';
 import CardInferior from './CardInferior';
 import './Card.css';
 import img1 from './../images/Costos.jpg'
+import img2 from './../images/Empresa.jpg'
+import img3 from './../images/Talento.jpg'
 
 const Desarrollo = ({modal,setModal,infoModal,setInfoModal}) => {
 
     const tarjetas=[
         {
             titulo: 'Tipo de empresa',
-            descripcion: '',
+            descripcion: 'Empresa S.A.S, Microempresa, del sector terciario, privada y regional',
             descripciones:3,
-            alt: '',
-            img: ''
+            alt: 'empresaPixabay',
+            img: img2
         },
         {
             titulo: 'Talento Humano',
-            descripcion: '',
+            descripcion: 'Los perfiles que deben cumplir las peronas que trabajaran con nosotros',
             descripciones:4,
-            alt: '',
-            img:''
+            alt: 'Profesional Pixabay',
+            img:img3
         },
         {
             titulo: 'Costos de Desarrollo',
-            descripcion: '',
+            descripcion: 'La inversión inicial que se debe realizar para tener el mínimo producto viable para el funcionamiento de la empresa.',
             descripciones:5,
-            alt: '',
+            alt: 'codePixabay',
             img: img1
         },
         {
