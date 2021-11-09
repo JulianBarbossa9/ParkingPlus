@@ -12,7 +12,7 @@ import React from 'react';
             <div className="infoCarrusel">
                 <div className="glassImageCont">
                     <div className="overLapGlass">
-                        <img src={src} alt={alt} className="img-carrusel"/>
+                        <img src={src} alt={alt} className="img-carrusel  hoverable"/>
                         <p className="glassP">{description}</p>
                     </div>
                 </div>

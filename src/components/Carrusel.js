@@ -89,39 +89,6 @@ const Carrusel = () => {
             },4000);
         });
     },[]);
-    /*    <div className="infoCarrusel">
-                            <a href="https://coldomotica.com">
-                                <img src={img1} alt="img1" className="img-carrusel"/>
-                            </a>
-                            <p>Hola</p>
-                        </div>
-                    
-
-                    <div className="infoCarrusel">
-                        <a href="https://coldomotica.com">
-                            <img src={img2} alt="img1" className="img-carrusel"/>
-                        </a>
-                    </div>*/ 
-
-
-    /* <ImageCarusel
-                        img={img1}
-                        
-                        alt={imagenes[0].alt}
-                        description={imagenes[0].description}
-                    />  
-                    <ImageCarusel
-                        img={img2}
-                        
-                        alt={imagenes[1].alt}
-                        description={imagenes[1].description}
-                    />   
-                    <ImageCarusel
-                        img={img3}
-                        
-                        alt={imagenes[2].alt}
-                        description={imagenes[2].description}
-                    />   */
 
 const imagenes=[
     {   src: img1,
@@ -139,17 +106,6 @@ const imagenes=[
         description: 'aloha3'   
     },
 ];
- const renderImagenes=(imagenes)=>{
-    imagenes.map((imagen,index)=>(
-        <ImageCarusel
-                src={imagen.src}
-                alt={imagen.alt}
-                description={imagen.description}
-                key={index} 
-        />
-    ));
- }
-
     return (  
         <Fragment>
             <div className="carrusel row">

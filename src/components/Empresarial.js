@@ -22,12 +22,14 @@ const Empresarial = () => {
 
     return (  
         <Fragment>
-            <div className="img-empre col s12 m6 ">
-                <h3>Imagen Empresarial</h3>
-                <div className="img">
-                    <img src={nave} alt = "logoParking" style={{transform: `translate(${position.x/17}px,${position.y/17}px)`}}  className="imgLogo"/>
-                    <img src={texto} alt = "logoParking" style={{transform: `translate(${position.x/30}px,${position.y/30}px)`}} className="imgLogo" />
-                    <img src={plus} alt = "logoParking" style={{transform: `translate(${position.x/20}px,${position.y/20}px)`}} className="imgLogo" />
+            <div className="col s12 m12 l6">
+                <div className="img-empre fullh">
+                    <h3>Imagen Empresarial</h3>
+                    <div className="img">
+                        <img src={nave} alt = "logoParking" style={{transform: `translate(${position.x/17}px,${position.y/17}px)`}}  className="imgLogo"/>
+                        <img src={texto} alt = "logoParking" style={{transform: `translate(${position.x/30}px,${position.y/30}px)`}} className="imgLogo" />
+                        <img src={plus} alt = "logoParking" style={{transform: `translate(${position.x/20}px,${position.y/20}px)`}} className="imgLogo" />
+                    </div>
                 </div>
             </div>
         </Fragment>

@@ -1,8 +1,11 @@
-import React, {Fragment} from 'react';
-import video from '../images/retoV3FE.jpg';
+import React, {Fragment, useState} from 'react';
+import ReactPlayer from 'react-player';
+import video from '../images/VideoRiver.mp4';
 // import ima1 from '../images/parkin2.png';
 
 const Objetivos = () => {
+
+
     return (  
         <Fragment>
             <div className="objetivos col l6 m5 s12">
@@ -17,7 +20,17 @@ const Objetivos = () => {
 
             <div className="videochevere col l6 m5 s12">
                 <div className="container-imgChevere">
-                    <img src={video} alt="imgChevere" className="container-img"/>
+                    {/* <img src={video} alt="imgChevere" className="container-img"/> */}
+                    <ReactPlayer
+                        url={video} 
+                        width="100%" 
+                        height="100%" 
+                        controls={true}
+                        playing={true}
+                        loop={true}
+                        volume={0}
+                        controls={false}
+                    />
                 </div>
             </div>
         </Fragment>

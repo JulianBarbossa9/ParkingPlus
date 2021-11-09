@@ -1,17 +1,27 @@
-import React from 'react';
+import React,{Fragment} from 'react';
+
+/*<h3>Misión</h3>
+<p className="flow-text">Somos una empresa que busca solucionar la problemática actual que viven los conductores de Bogotá, 
+                                para encontrar un lugar seguro donde dejar su vehículo y generar ingresos adicionales a quienes 
+                                tengan estos espacios disponibles a través de nuestra plataforma.</p> */
 
 const Mision = () => {
     return (  
-        <div className="container col s12 m12 l6">
-            <div className="mision">
-                <h3>Misión</h3>
+        <div className="mision-container row textContainer container">
+            <div className="col s12 m6 l6">
+                <div className="center">
+                <h3 className="titleVm">Misión</h3>
+                </div>
             </div>
-
-            <div className="text-mision">
-                <p>Somos una empresa que busca solucionar la problemática actual que viven los conductores de Bogotá, para encontrar un lugar seguro donde dejar su vehículo y generar ingresos adicionales a quienes tengan estos espacios disponibles a través de nuestra plataforma.</p>
+            <div className="col s12 m6 l6">
+                <div className="center">
+                <p className="textMision flow-text">Somos una empresa que busca solucionar la problemática actual que viven los conductores de Bogotá, 
+                                para encontrar un lugar seguro donde dejar su vehículo y generar ingresos adicionales a quienes 
+                                tengan estos espacios disponibles a través de nuestra plataforma.</p>
+                </div>
             </div>
-
         </div>
+    
     );
 }
  

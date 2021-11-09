@@ -3,12 +3,10 @@ import Card from './Card';
 import ima1 from '../images/parkin2.png';
 
 
-
-
 const cards = [
     {
         id: 1,
-        title: 'Estudio Técnico',
+        title: 'Factibilidad Técnico',
         image:ima1,
         text:'Es necesario un lenguaje que cumpla con los siguientes requisitos: ',
         item1:'Comunidad de desarrolladores para solución de problemas y aprendizaje.',
@@ -42,12 +40,9 @@ const cards = [
 
 const Estudios = () => {
     return (  
-        <div className="row center-align">
-            
-            <div className="estudioFacti col s10 m4 l12 ">
-                    {
-                        cards.map(card => (
-                            <div className="tarjetaUno " key={card.id} >
+        <div className="MyRow">
+                     {cards.map(card => (
+                            <div className="col s12 m4 l4 " key={card.id} >
                                 <Card 
                                     title={card.title}  
                                     imageSource={card.image} 
@@ -58,22 +53,9 @@ const Estudios = () => {
                                     alt={card.alt} 
                                 />
                             </div>
-                        ))
-                    }
+                    ))
+                    }     
                     
-            </div>
-            {/* <div className="estudioMerca col s12 m4">
-                <h4>Factibilidad Economica</h4>
-                    <div className="targetaDos">
-                    
-                    </div>
-            </div>
-            <div className="estudioEstadofinan col s12 m4">
-                    <h4>Estudio Mercado</h4>
-                    <div className="targetaTres">
-                            <div className="targetaUno col s4">
-                    </div>
-            </div> */}
         </div>
     );
 }
