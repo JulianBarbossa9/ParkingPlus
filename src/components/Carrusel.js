@@ -1,10 +1,14 @@
 import React, {Fragment, useRef, useEffect} from 'react';
+import arrow from './../images/arrow.svg';
+import ImageCarusel from './ImageCarrusel';
 import img1 from './../images/retoV1FE.jpg';
 import img2 from './../images/retoV2FE.jpg';
 import img3 from './../images/retoV3FE.jpg';
-import flecha1 from './../images/left-arrow.png';
-import flecha2 from './../images/right-arrow.png';
-import arrow from './../images/arrow.svg';
+/* import img4 from './../images/BoatNoon.jpg';
+import img5 from './../images/Violin.JPG';
+import img6 from './../images/Planet.JPG'; */
+
+
 
 
 
@@ -25,7 +29,7 @@ const Carrusel = () => {
             const primerElemento = slideshow.current.children[0];
 
             // Creamos la transición del slideshow
-            slideshow.current.style.transition = `3000ms ease-out all`;
+            slideshow.current.style.transition = `2000ms ease-out all`;
             
             //Calculo el tamaño de la imagen para saber cuanto la voy a desplazar
             const tamaSlide = slideshow.current.children[0].offsetWidth;
@@ -66,7 +70,7 @@ const Carrusel = () => {
             slideshow.current.style.transform = `translateX(-${tamaSlide}px)`;
 
             setTimeout(() => {
-                slideshow.current.style.transition = '3000ms ease-out all';
+                slideshow.current.style.transition = '2000ms ease-out all';
                 slideshow.current.style.transform = `translateX(0)`;
             }, 30)
         }
@@ -90,32 +94,56 @@ const Carrusel = () => {
         });
     },[]);
 
-
-
+const imagenes=[
+    {   src: img1,
+        alt: 'imagen1',
+        description: 'aloha1' ,
+        href: ' '  
+    },
+    {   
+        src: img2,
+        alt: 'imagen2',
+        description: 'aloha2',
+        href: ' '
+    },
+    {   
+        src: img3,
+        alt: 'imagen3',
+        description: 'aloha3', 
+        href: ' '  
+    },
+/*     {   
+        src: img4,
+        alt: 'BoatNoon',
+        description: 'Render realizado en cinema 4D y Corona renerer', 
+        href: 'https://www.behance.net/diegoww3'  
+    },
+    {   
+        src: img5,
+        alt: 'ViolinPyro',
+        description: 'Render realizado en Houdini y cinema 4D', 
+        href: 'https://www.behance.net/diegoww3'  
+    },
+    {   
+        src: img6,
+        alt: 'Planet',
+        description: 'Render realizado en cinema 4D y Corona renerer',   
+        href: 'https://www.behance.net/diegoww3'
+    }, */
+];
     return (  
         <Fragment>
-            <div className="carrusel  row">
+            <div className="carrusel row">
                 <div className="contendorSlide" ref={slideshow}>
-                    <div className="infoCarrusel">
-                        <a href="https://coldomotica.com">
-                            {/* <h2 className="nosotros"> Nosotros</h2>
-                            <p>Ingenieros en Multimedia</p> */}
-                            <img src={img1} alt="img1" className="img-carrusel"/>
-                        
-                        </a>
-                    </div>
-
-                    <div className="infoCarrusel">
-                        <a href="https://coldomotica.com">
-                            <img src={img2} alt="img1" className="img-carrusel"/>
-                        </a>
-                    </div>
-
-                    <div className="infoCarrusel">
-                        <a href="https://coldomotica.com">
-                            <img src={img3} alt="img1" className="img-carrusel"/>
-                        </a>
-                    </div>
+                    {imagenes.map((imagen,index)=>(
+                        <ImageCarusel
+                                href={imagen.href}
+                                src={imagen.src}
+                                alt={imagen.alt}
+                                description={imagen.description}
+                                key={index} 
+                        />
+                    ))}        
                 </div>
                 
                 <div className="controles">

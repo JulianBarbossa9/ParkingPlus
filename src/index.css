@@ -4,32 +4,47 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   /* font-family: 'Lato', sans-serif; */
 font-family: 'Prompt', sans-serif;
-  
-
 }
 html, body {
   height: 100%;
   margin: 0;
 }
+body{
+   background-attachment:fixed ;
+  background-repeat: no-repeat;
+  background: rgb(21,246,255);
+  background: -moz-linear-gradient(90deg, rgba(21,246,255,1) 0%, rgba(0,93,98,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(21,246,255,1) 0%, rgba(0,93,98,1) 100%);
+  background: linear-gradient(90deg, rgba(21,246,255,1) 0%, rgba(0,93,98,1) 100%); 
+
+
+}
 .brand-logo{
-  padding: 2rem;
+  padding: 1rem;
 }
 .row{
+  min-height: 50vh;
+  z-index: 1;
+}
+
+.fullh{
   height: 100vh !important;
 }
+
 .topto{
   min-height: 100%;
 }
 
 
 
-img{
+
+.logoHeader{
   width: auto;
-  height: 100px;
+  height: 150px;
+
 }
 
 .mainLogo{
-  grid-area: mainLogo;
   /* border: 2px solid red; */
   display: flex;
   justify-content: center;
@@ -38,17 +53,60 @@ img{
 }
 
 .nav{
-  grid-area: nav;
+  background-color: #294f6300;
+  box-shadow: none;
+  width: auto;
+}
+
+.navCont{
   /* border: 2px solid red; */
   display: flex;
-  justify-content: center;
-  background-color: rgb(84, 223, 158);
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  height: auto;
+  padding: 1rem;
+  
   font-size: 20px;
+  
+    /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+
+}
+
+.circle{
+  
+  z-index: -1;
+  width: 250px;
+    height: 250px;
+    background: blue; 
+    -moz-border-radius: 70px; 
+    -webkit-border-radius: 70px; 
+    border-radius: 150px;
+    position: absolute;
+  background: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+
+}
+
+
+.textContainer{
+  margin-top: 2rem;
+  padding-top: 2rem;
+
 }
 
 .nav-link{
   text-decoration: none;
-  color: white;
+  /*color: #294f63;*/
+  color: whitesmoke;
   /* color: black; */
 }
 
@@ -76,7 +134,7 @@ img{
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  position: relative;
+
   /* margin: 0 300px; */
 }
 
@@ -103,8 +161,62 @@ img{
   transition: .3s ease all;
   margin: 0 50px;
   filter: drop-shadow(2px 2px 2px rgb(59, 187, 87) );
-  
 }
+
+.btn-carrusel:focus{
+  background-color: #bebebe00;
+}
+
+.glassP{
+  z-index: 2;
+  width: 920px;
+  text-align: center;
+  margin: 1rem;
+}
+
+.overLapGlass{
+  padding: 1rem;
+  margin-left: 2rem;
+  position: relative;
+}
+
+.glassImageCont{
+  margin: 13rem;
+  padding: 1rem;
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.blurImg{
+  filter: blur(8px);
+}
+
+.img-carrusel{
+  border-radius: 36px;
+  background: #15f6ff;
+  box-shadow: inset 15px 15px 29px #11ccd4,
+              inset -15px -15px 29px #19ffff; 
+
+  overflow: hidden;
+  z-index: 1;
+  width: 920px;
+  height:auto;
+  opacity: 100%;
+  border-radius: 15px;
+
+
+}
+
 
 /* .btn-carrusel:hover{
   background: rgba(63, 61, 61, 0.2);
@@ -125,6 +237,7 @@ img{
 }
 
 .infoCarrusel{
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -136,28 +249,33 @@ img{
   max-height: 921px;
 }
 
-/* .derecha{
-  right: 0;
-}
-.izquierda{
-  left: 0;
-} */
 
-.img-carrusel{
-  width: 920px;
-  height:auto;
-  opacity: 75%; 
-}
+
 
 .contendorSlide{
   display: flex;
-  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 
 .nosotros{
   font-size: 80px;
   font-weight: bold;
+
+}
+
+.MV{
+
+  padding: 1.5rem;
+}
+
+.glassContainer{
+  padding-top: 2rem;
+  max-width: 600px;
+  margin: 2rem;
+
+
 
 }
 
@@ -182,6 +300,11 @@ img{
  
 }
 
+
+.flow-text{
+  text-align: justify;
+}
+
 .vision{
   grid-area: vision;
   /* border: 2px solid red; */
@@ -198,64 +321,129 @@ img{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 120px;
+  padding: 0 2rem;
   text-justify: justify;
 }
 
 h2{
   margin: 20px 0;
-  font-size: 40px;
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+  color:white;
 }
 
 .objetivos{
   grid-area: objetivos;
-  /* border: 2px solid red; */
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
+}
+
+.objCont{
+  padding: 2rem;
+  text-align: justify;
+  text-align: center;
+  height: 650px;
+  color: white;
+}
+
+.videochevere{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.container-objetos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.container-imgChevere{
+  width: auto;
+  height: auto;
+  /* border: 2px solid rgb(0, 255, 64); */
+  
+}
+
+.container-img{
+  width: auto;
+  height: 500px;
+
+  border-radius: 50px;
+  margin: 20px 20px;
+}
+
+.lista2{
+  list-style-image: url("https://mdn.mozillademos.org/files/11979/starsolid.gif");
+  list-style-position: inside;
+  margin: 15px 70px;
+  color: white;
 }
 
 h3{
   margin: 30px 0;
   text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.titleVm{
+  font-size: 80px;
+}
+.textMision {
+  color: white;
 }
 
 .slogan{
   font-weight: bolder;
   font-size: 50px;
 
-text-shadow:  12px 12px 16px #828282,
-             -12px -12px 16px #ffffff;
 }
 
 .eslogan {
+  text-align: center;
+
   
   grid-area: eslogan;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   /* border: 2px solid red; */
   font-size: 25px;
+  padding: 2rem;
+
+
+
 }
 
 .img-empre {
-  grid-area: img-empre;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  /* border: 2px solid red; */
+  align-items: flex-end;
   font-size: 25px;
+  padding: 2rem;
 
 
-  border-radius: 50px;
-box-shadow:  20px 20px 60px #bebebe,
-             -20px -20px 60px #ffffff;
 }
+
+.empr{
+    
+  border-radius: 50px;
+
+}
+
 .imgLogo{
   position: absolute;
   max-width: 100%;
+  max-width: 30vw;
 }
 
 .img{
@@ -265,23 +453,16 @@ box-shadow:  20px 20px 60px #bebebe,
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid rgb(15, 15, 15);
-  border-radius: 100px ;
-  background: rgba( 248, 248, 248, 0.15 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 11.5px );
--webkit-backdrop-filter: blur( 11.5px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
   
+  border-radius: 10px;
+
 }
 
 .estudioFacti{
   /* border: 2px solid red; */
-  grid-area:estudioFacti ;
   display: flex;
   justify-content: center;
-  text-align: center;
+  align-items: center;
 }
 
 .estudioMerca{
@@ -298,20 +479,24 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   justify-content: center;
 }
 
-/* .TargetaUno, 
-.TargetaDos,
-.TargetaTres{
-  border: 2px solid rgb(22, 240, 124);
-  margin: 50px 50px;
-  padding: 80px 20px;
-} */
 
 .organigrama{
   grid-area:organigrama;
   display: flex;
   justify-content: center;
-  border: 2px solid red;
-  
+
+}
+
+.img-organigrama{
+  width: 1200px;
+  height: 800px;
+}
+
+h4{
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 50px;
 }
 
 .tipoEmpresa {
@@ -336,7 +521,188 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 footer{
-  grid-area: footer;
-  border: 2px solid red;
+  background-color: #49cfcf;
 }
 
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.icon-footer{
+  width: 40px;
+  height: 40px;
+  margin: 20px 10px;
+  cursor: pointer;
+}
+
+.icon-footer:hover{
+  border: 1px solid black;
+  transition: 1s;
+}
+
+.cardInferiorInfo{
+  padding: 1rem 2rem;
+}
+
+.cardInferior{
+    max-width: 600px;
+    width: auto;
+    height: auto;
+    color: white;
+    border-radius: 25px;
+    backdrop-filter: blur(12px);
+    background-color: rgba(0,191,255, 0.062);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 2px rgba(255,255,255,0.4) solid;
+    border-bottom: 2px rgba(40,40,40,0.35) solid;
+    border-right: 2px rgba(40,40,40,0.35) solid;
+    margin: 5rem 40px;
+    padding-bottom: 2rem;
+}
+
+.CardImageInferior{
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+
+}
+
+.card-titleInferior{
+  text-align: center;
+  font-size: 3.5rem;
+  margin-top: -5rem;
+  margin-bottom: 3rem;
+
+
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter:blur(5px);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  background-image: linear-gradient(155deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0));
+
+
+  }
+
+.card-imageInferior{
+  
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.card {
+  /* border: 2px solid red; */
+    padding: 2rem;
+    width: 500px;
+    min-height: 700px;
+    color: white;
+    border-radius: 25px;
+    backdrop-filter: blur(12px);
+    background-color: rgba(0,191,255, 0.062);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 2px rgba(255,255,255,0.4) solid;
+    border-bottom: 2px rgba(40,40,40,0.35) solid;
+    border-right: 2px rgba(40,40,40,0.35) solid;
+    margin: 5rem 40px;
+    
+}
+
+.card-image{
+  /* height: auto; */
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:0px 50px;
+  position: relative;
+
+}
+
+.card-title, h5{
+  font-size: 40px;
+  font-weight: bold;
+}
+
+
+.lista1{
+  list-style-image: url("https://mdn.mozillademos.org/files/11979/starsolid.gif");
+  list-style-position: inside;
+  margin: 15px 70px;
+}
+
+
+/*mi responsive*/
+
+.MyRow{
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+@media (max-width: 1000px){
+  .MyRow{
+    align-items: center;
+    width: 100vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  }
+  h4{
+    font-size: large;
+  }
+}
+
+.modalHeading{
+  font-size: 2rem;
+}
+
+
+/*modal*/
+/* The Modal (background) */
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -5,13 +5,13 @@ import React,{Fragment} from 'react';
 const Eslogan = () => {
     return ( 
         <Fragment>
-            <div className="eslogan col s12 m12 l6">
+            <div className="eslogan ">
                 <h3>Eslogan</h3>
                 <div>
-                   <p className="slogan">Enfocate en el <b>destino</b></p>
+                   <blockquote className="slogan ">Enfocate en el <b>destino</b></blockquote>
                 </div>
                 <div >
-                    <p className="slogan"> Nosotros en el l<b>ugar</b></p>
+                    <blockquote className="slogan"> Nosotros en el l<b>ugar</b></blockquote>
                 </div>
             </div>
         </Fragment>
