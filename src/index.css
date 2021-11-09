@@ -543,6 +543,10 @@ footer{
   transition: 1s;
 }
 
+.cardInferiorInfo{
+  padding: 1rem 2rem;
+}
+
 .cardInferior{
     max-width: 600px;
     width: auto;

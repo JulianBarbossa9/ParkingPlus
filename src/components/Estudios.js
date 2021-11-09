@@ -44,9 +44,10 @@ const cards = [
 const Estudios = ({modal, setModal, infoModal, setInfoModal}) => {
     return (  
         <div className="MyRow">
-                     {cards.map(card => (
+                     {cards.map((card, index) => (
                             <div className="col s12 m4 l4 " key={card.id} >
                                 <Card 
+                                    key={index}
                                     title={card.title}  
                                     imageSource={card.image} 
                                     text={card.text} 

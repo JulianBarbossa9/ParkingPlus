@@ -45,7 +45,7 @@ export const informacion=(estudio)=>{
             </p>
             </div>
             return (text);
-            break;
+            
 
 
         case 1:
@@ -125,7 +125,7 @@ export const informacion=(estudio)=>{
                 </table>
             </div>
             return (text);
-            break;
+            
 
 
         case 2:
@@ -167,7 +167,46 @@ export const informacion=(estudio)=>{
         </div>
 
         return (text);
-            break;
+            
+
+        case 5:
+            text=<div>
+                <h4 className="modalHeading">Costos de Desarrollo:</h4>
+                <p>
+                <b>UX</b> (user experience)Esta disciplina se encarga de que el sitio sea usable y que la experiencia del usuario sea agradable. Una tarea importante en este rol es el flujo de usuario, que es la cantidad de pasos que debe seguir para realizar una tarea.  $5,266,833.
+                </p>
+                <p>
+                <b>UI</b> (User Interface)Se encarga del diseño de toda la interfaz con programas como: Sketch, AdobeXD Photoshop, etc. UI está profundamente ligado con UX, podemos diseñar perfecto el flujo de usuario, pero sin algún botón es confuso puede que el el usuario no de clic y nuevamente la empresa pierde dinero. $3.629.444.
+                </p>
+                <p>
+                <b>Frontend Developer</b> Se encarga de desarrollar toda la lógica del lado del cliente, por ejemplo: cuando entras a la web de EDteam: haces clic en el botón "ingresar", ese botón te abre un formulario donde pondrás tu usuario y contraseña, los datos se enviarán al servidor, este retornara una respuesta y según la respuesta se mostrará un mensaje u otro. Aunque usualmente el Frontend deja para el web Designer los colores, tipografías márgenes, etc, muchas veces también cumple con este rol, como dije antes, depende mucho del presupuesto. $4.349.748.
+                </p>
+                <p>
+                <b>Backend Developer</b> Hace toda la lógica del lado del servidor, toda la seguridad está en esta parte; si tú haces seguridad en el lado del cliente, una persona con relativos conocimientos de programación podría modificar esa validación desde el inspector del navegador, por eso también se agrega validación del lado del servidor y es muchísimo más segura. El programador Backend también se encarga de comunicarse con las bases de datos, para recuperar la información que luego se le enviará al Frontend. $4.000.000.
+                </p>
+                <p>                  
+                <b>DBA(Database Administrator)</b> Se encarga de Diseñar las bases datos, que son grandes almacenes de información, supongamos que en EDteam tenemos 50,000 suscriptores y necesitamos guardar sus datos (nombre, apellidos, cuándo fue la última vez que iniciaron sesión, que cursos ven, etc). En una aplicación la data es fundamental porque a partir de los datos se toman las decisiones, y una base de datos bien diseñada permite que un proyecto sea escalable, por eso el DBA diseña la base de datos(incluso el lápiz y papel) antes de ponerse a escribir código. Si un proyecto crece y la base de datos está mal diseñada, habrá que cambiar muchas cosas, arrastrando en el proceso al Frontend y al Backend, terminando en un caos total. Así como el front end y el web designer se pueden juntar en un solo rol, en proyectos pequeños también suele hacerse lo mismo con el back end y el DBA, pero lo ideal es que estén separados.$4.500.000.
+                </p>
+                <p>
+                <b>Arquitecto Cloud</b> Analiza el proyecto para definir los requerimientos de hardware e infraestructura que se van a necesitar para que este pueda funcionar en producción, por ejemplo: Un proyecto que va a tener 10 usuarios al día no requiere mucha maquina, pero en un proyecto gigante él arquitecto sabrá qué requerimientos necesita (base de datos, almacenamiento, balanceamiento de carga, certificados ssl, etc), él arquitecto cloud diseña e implementa toda la infraestructura en cloud y luego se encarga de mandar el proyecto a producción.$8.000.000.
+                </p>
+                <p>
+                <b>QA (Quality Assurance o Control de Calidad)</b> Se encarga de hacer las pruebas necesarias durante el desarrollo del proyecto para asegurarse del control de calidad, documenta todos los procesos para que en el futuro las cosas mejoren y los errores que ocurrieron no se vuelvan a repetir. Un tester solamente prueba si algo falla y lo reporta, en cambio un QA también ve qué cosas podrían mejorarse (Aunque no estén fallando).$2.900.000.
+
+                </p>
+                <p>
+                <b>Profesional en marketing digital.</b> No basta con que un proyecto esté bien hecho, si nadie lo conoce de nada sirve, es aquí donde entra este rol, su labor es la de promocionar el proyecto, se encarga cosas como analytics, SEO, campañas en redes sociales, campañas en buscadores, etc. $1.754.000.
+
+
+
+                Creador de contenidos. Un proyecto web necesita contenidos, por ejemplo: $1.250.000.
+
+                </p>
+            </div>
+            return (text);
+            
+            default:
+                break;
 
     }
 }

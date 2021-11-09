@@ -24,10 +24,10 @@ function App() {
   
   return (
     <Fragment>
-      <BackgroundShapes
+       <BackgroundShapes
           number={mine}
           pages={pages}
-      /> 
+      />  
       {modal?<Modal
         setModal={setModal}
         infoModal={infoModal}
@@ -57,14 +57,19 @@ function App() {
         <Organigrama/>
       </div>
       <div className="row">
-        <Desarrollo/>
+        <Desarrollo
+          modal={modal}
+          setModal={setModal}
+          infoModal={infoModal}
+          setInfoModal={setInfoModal}
+        />
       </div>
       <footer>
         <div >
           <ul className="footer">
-            <li><a ><img className="icon-footer" src={instagram}></img></a></li>
-            <li><a ><img className="icon-footer" src={whatsapp}></img></a></li>
-            <li><a ><img className="icon-footer" src={linkedin}></img></a></li>
+            <li><a href="!#"><img alt=" "className="icon-footer" src={instagram}></img></a></li>
+            <li><a href="!#"><img alt=" "className="icon-footer" src={whatsapp}></img></a></li>
+            <li><a href="!#"><img alt=" "className="icon-footer" src={linkedin}></img></a></li>
           </ul>
         </div>
         <p>Todos los derechos reservador &copy;</p>  

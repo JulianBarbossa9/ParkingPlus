@@ -5,6 +5,7 @@
     transition: all 0.2s ease;
     border: none;
     background: none;
+    
    }
    
    .cta:before {
@@ -14,7 +15,7 @@
     left: 0;
     display: block;
     border-radius: 50px;
-    background: #b1dae7;
+    background: #ffffff;
     width: 45px;
     height: 45px;
     transition: all 0.3s ease;
@@ -44,7 +45,7 @@
    
    .cta:hover:before {
     width: 100%;
-    background: #b1dae7;
+    background: #e4e4e4;
     cursor: pointer;
    }
    

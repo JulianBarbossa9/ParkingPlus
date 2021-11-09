@@ -20,7 +20,7 @@ const Objetivos = () => {
 
             <div className="videochevere col l6 m5 s12">
                 <div className="container-imgChevere">
-                    {/* <img src={video} alt="imgChevere" className="container-img"/> */}
+                    
                     <ReactPlayer
                         url={video} 
                         width="100%" 
@@ -29,7 +29,6 @@ const Objetivos = () => {
                         playing={true}
                         loop={true}
                         volume={0}
-                        controls={false}
                     />
                 </div>
             </div>
