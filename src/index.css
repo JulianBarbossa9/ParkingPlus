@@ -327,7 +327,7 @@ body{
 
 h2{
   margin: 20px 0;
-  font-size: 40px;
+  font-size: 50px;
   text-align: center;
   font-weight: bold;
   color:white;
@@ -389,11 +389,22 @@ h2{
   list-style-image: url("https://mdn.mozillademos.org/files/11979/starsolid.gif");
   list-style-position: inside;
   margin: 15px 70px;
+  color: white;
 }
 
 h3{
   margin: 30px 0;
   text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.titleVm{
+  font-size: 80px;
+}
+.textMision {
+  color: white;
 }
 
 .slogan{
@@ -428,20 +439,17 @@ h3{
   font-size: 25px;
   margin: 0 !important;
 
-
-
   filter: drop-shadow(0 0 20px #1b5e20);
-
 
 
 }
 
-.empr{
+/* .empr{
 
   border-radius: 50px;
   box-shadow:  20px 20px 60px #bebebe,
               -20px -20px 60px #ffffff;
-}
+} */
 
 .imgLogo{
   position: absolute;
@@ -506,8 +514,19 @@ h3{
   grid-area:organigrama;
   display: flex;
   justify-content: center;
-  border: 2px solid red;
-  
+
+}
+
+.img-organigrama{
+  width: 1200px;
+  height: 800px;
+}
+
+h4{
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 50px;
 }
 
 .tipoEmpresa {
@@ -532,8 +551,26 @@ h3{
 }
 
 footer{
-  grid-area: footer;
-  border: 2px solid red;
+  background-color: #49cfcf;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.icon-footer{
+  width: 40px;
+  height: 40px;
+  margin: 20px 10px;
+  cursor: pointer;
+}
+
+.icon-footer:hover{
+  border: 1px solid black;
+  transition: 1s;
 }
 
 

@@ -11,6 +11,9 @@ import Estudios from './components/Estudios';
 import Organigrama from './components/Organigrama';
 import Desarrollo from './components/Desarrollo';
 import styled from '@emotion/styled';
+import instagram from './images/instagram.svg';
+import whatsapp from './images/wpp.svg';
+import linkedin from './images/linkedin.svg';
 
 function App() {
 
@@ -60,6 +63,13 @@ function App() {
             />
           </div>
           <footer>
+            <div >
+              <ul className="footer">
+                <li><a ><img className="icon-footer" src={instagram}></img></a></li>
+                <li><a ><img className="icon-footer" src={whatsapp}></img></a></li>
+                <li><a ><img className="icon-footer" src={linkedin}></img></a></li>
+              </ul>
+            </div>
             <p>Todos los derechos reservador &copy;</p>  
           </footer>
           
