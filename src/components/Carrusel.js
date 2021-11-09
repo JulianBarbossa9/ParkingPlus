@@ -112,7 +112,7 @@ const imagenes=[
         description: 'aloha3', 
         href: ' '  
     },
-    {   
+/*     {   
         src: img4,
         alt: 'BoatNoon',
         description: 'Render realizado en cinema 4D y Corona renerer', 
@@ -129,7 +129,7 @@ const imagenes=[
         alt: 'Planet',
         description: 'Render realizado en cinema 4D y Corona renerer',   
         href: 'https://www.behance.net/diegoww3'
-    },
+    }, */
 ];
     return (  
         <Fragment>

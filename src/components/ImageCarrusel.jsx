@@ -12,7 +12,6 @@ import React from 'react';
                         <p className="glassP">{description}</p>
                     </div>
                 </div>
-                
             </div>
          );
     }

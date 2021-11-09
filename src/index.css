@@ -188,13 +188,13 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-/* From https://css.glass */
-background: rgba(255, 255, 255, 0.2);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .blurImg{
@@ -327,7 +327,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
 h2{
   margin: 20px 0;
-  font-size: 40px;
+  font-size: 50px;
   text-align: center;
   font-weight: bold;
   color:white;
@@ -373,7 +373,7 @@ h2{
 
 .container-img{
   width: auto;
-  height: 650px;
+  height: 500px;
 
   border-radius: 50px;
   margin: 20px 20px;
@@ -383,11 +383,22 @@ h2{
   list-style-image: url("https://mdn.mozillademos.org/files/11979/starsolid.gif");
   list-style-position: inside;
   margin: 15px 70px;
+  color: white;
 }
 
 h3{
   margin: 30px 0;
   text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.titleVm{
+  font-size: 80px;
+}
+.textMision {
+  color: white;
 }
 
 .slogan{
@@ -422,15 +433,12 @@ h3{
   font-size: 25px;
   margin: 0 !important;
 
-
-
   filter: drop-shadow(0 0 20px #1b5e20);
-
 
 
 }
 
-.empr{
+  .empr{
 
   border-radius: 50px;
 
@@ -494,8 +502,19 @@ h3{
   grid-area:organigrama;
   display: flex;
   justify-content: center;
-  border: 2px solid red;
-  
+
+}
+
+.img-organigrama{
+  width: 1200px;
+  height: 800px;
+}
+
+h4{
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 50px;
 }
 
 .tipoEmpresa {
@@ -520,11 +539,75 @@ h3{
 }
 
 footer{
-  grid-area: footer;
-  border: 2px solid red;
+  background-color: #49cfcf;
 }
 
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
 
+.icon-footer{
+  width: 40px;
+  height: 40px;
+  margin: 20px 10px;
+  cursor: pointer;
+}
+
+.icon-footer:hover{
+  border: 1px solid black;
+  transition: 1s;
+}
+
+.cardInferior{
+    max-width: 600px;
+    width: auto;
+    height: auto;
+    color: white;
+    border-radius: 25px;
+    backdrop-filter: blur(12px);
+    background-color: rgba(0,191,255, 0.062);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 2px rgba(255,255,255,0.4) solid;
+    border-bottom: 2px rgba(40,40,40,0.35) solid;
+    border-right: 2px rgba(40,40,40,0.35) solid;
+    margin: 5rem 40px;
+    padding-bottom: 2rem;
+}
+
+.CardImageInferior{
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+
+}
+
+.card-titleInferior{
+  text-align: center;
+  font-size: 3.5rem;
+  margin-top: -5rem;
+  margin-bottom: 3rem;
+
+
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter:blur(5px);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  background-image: linear-gradient(155deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0));
+
+
+  }
+
+.card-imageInferior{
+  
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
 
 .card {
   /* border: 2px solid red; */
@@ -550,6 +633,8 @@ footer{
   justify-content: center;
   align-items: center;
   margin:0px 50px;
+  position: relative;
+
 }
 
 .card-title, h5{
@@ -574,6 +659,7 @@ footer{
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  justify-content: center;
   
 }
 

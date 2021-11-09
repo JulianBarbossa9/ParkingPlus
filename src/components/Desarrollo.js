@@ -1,28 +1,45 @@
 import React from 'react';
+import CardInferior from './CardInferior';
 
 const Desarrollo = () => {
+
+    const tarjetas=[
+        {
+            titulo: '',
+            descripcion: '',
+            descripciones:['','']
+        },
+        {
+            titulo: '',
+            descripcion: '',
+            descripciones:['','']
+        },
+        {
+            titulo: '',
+            descripcion: '',
+            descripciones:['','']
+        },
+        {
+            titulo: '',
+            descripcion: '',
+            descripciones:['','']
+        },
+    ];
+    const renderCards=(objetos)=>{
+        return(
+            objetos.map((objeto)=>(
+                <CardInferior
+                    titulo={objeto.titulo}
+                    descripcion={objeto.descripcion}
+                    descripciones={objeto.descripciones}
+                />
+        ))
+        )
+    };
+
     return (  
-        <div className="row">
-            <div className="tipoEmpresa col s12 m4">
-                <div className="containerUno">
-                    <p>lorem ipsum
-                    </p>
-                </div>
-            </div>
-
-            <div className="talentoHumano col s12 m4">
-                <div className="containerDos">
-                    <p>lorem ipsum
-                    </p>
-                </div>
-            </div>
-
-            <div className="costoDesarrollo col s12 m4">
-                <div className="containerTres">
-                    <p>lorem ipsum
-                    </p>
-                </div>
-            </div>
+        <div className="MyRow">
+            {renderCards(tarjetas)}
         </div>
     );
 }
