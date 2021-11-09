@@ -38,11 +38,11 @@ export const informacion=(estudio)=>{
             Procesador: Quad core a 2.5Mhz.</p>
             
             <h4 className="modalHeading">Experiencia y conocimiento del equipo</h4>
-            <p className="MyText">
-            El equipo está conformado por estudiantes de ingeniería en multimedia, quienes cuentan con conocimientos en desarrollo web, haciendo uso de librerías como react, diseño de interfaces, investigación en experiencia de usuario, diseño desarrollo e implementación de bases de datos relacionales haciendo uso de Mysql, metodologías ágiles, entre otros.
+                <p className="MyText">
+                    El equipo está conformado por estudiantes de ingeniería en multimedia, quienes cuentan con conocimientos en desarrollo web, haciendo uso de librerías como react, diseño de interfaces, investigación en experiencia de usuario, diseño desarrollo e implementación de bases de datos relacionales haciendo uso de Mysql, metodologías ágiles, entre otros.
             
-            Tomando en cuenta la información recopilada anteriormente, y las necesidades de software, hardware, conocimiento y equipo requeridos para el desarrollo de este proyecto, se puede concluir que a nivel técnico, si es factible el desarrollo del mismo.
-            </p>
+                    Tomando en cuenta la información recopilada anteriormente, y las necesidades de software, hardware, conocimiento y equipo requeridos para el desarrollo de este proyecto, se puede concluir que a nivel técnico, si es factible el desarrollo del mismo.
+                 </p>
             </div>
             return (text);
             
@@ -130,7 +130,8 @@ export const informacion=(estudio)=>{
 
         case 2:
         text=<div>
-             <h4 className="modalHeading">Introducción:</h4> <p>A través del siguiente proyecto se busca evaluar el desarrollo de la aplicación “Parking +” para tratar de ayudar tanto como arrendador como arrendatario, en publicar los sitios de estacionamiento disponibles, la cual presenta una nueva alternativa para los usuarios.
+             <h4 className="modalHeading">Introducción:</h4> 
+             <p>A través del siguiente proyecto se busca evaluar el desarrollo de la aplicación “Parking +” para tratar de ayudar tanto como arrendador como arrendatario, en publicar los sitios de estacionamiento disponibles, la cual presenta una nueva alternativa para los usuarios.
             </p>
              <h4 className="modalHeading">Problema:</h4><p> Uno de los principales inconvenientes en la ciudad de Bogotá, es la invasión de las vías públicas por no encontrar un sitio correcto donde estacionarse o por los sobrecostos en los parqueaderos públicos cercanos, afectando indirectamente en el tráfico de la ciudad. 
             </p>
@@ -204,6 +205,33 @@ export const informacion=(estudio)=>{
                 </p>
             </div>
             return (text);
+
+            case 6:
+                text=<div>
+                    <h5>Activos Circulantes</h5>
+                    <p><b>Efectivo:</b> $10.000</p>
+                    <p><b>Cuentas por Cobrar:</b> $102.000</p><br></br>
+
+                    <h5>Activos Fijos</h5>
+                    <p><b>Mantenimiento:</b> $50.000</p>
+                    <p className="total"><u><b>Total Efectivos:</b> $162.000</u></p><br></br>
+
+                    <h5>Pasivos</h5>
+                    <p><b>Cuentas por Pagar:</b> $100.000</p>
+                    <p><b>Pagares:</b> $30.000</p>
+                    <p className="total"><u><b>Subtotal:</b> $130.000</u></p><br></br>
+
+                    <h5>Patrimonio de los Dueños</h5>
+                    <p><b>Acciones:</b> $1.000.000</p>
+                    <p><b>Ganancias:</b> $0</p>
+                    <p className="total"><u><b>Subtotal:</b> $1.000.000</u></p><br></br>
+
+                    <h5>Pasivos y Patrimonio</h5>
+                    <p className="total"><u><b>$1.130.000</b></u></p><br></br>
+
+                    
+                </div>
+                return(text);
             
             default:
                 break;

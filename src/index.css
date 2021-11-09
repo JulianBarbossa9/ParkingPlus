@@ -613,20 +613,16 @@ footer{
 }
 
 .card-image{
-  /* height: auto; */
   width: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin:0px 50px;
+  margin:0px 100px;
   position: relative;
-
 }
 
-.card-title, h5{
-  font-size: 40px;
+.title-card{
+  font-size: 30px;
   font-weight: bold;
 }
+
 
 
 .lista1{
@@ -666,6 +662,7 @@ footer{
 
 .modalHeading{
   font-size: 2rem;
+  margin: 40px 0;
 }
 
 

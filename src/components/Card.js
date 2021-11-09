@@ -25,7 +25,7 @@ const Card = ({title, imageSource, text, item1, item2, item3, alt,content,setMod
                 <div className="card ">
                     <div className="card-image">
                         <img src={imageSource} alt={alt}/>
-                        <h5 className="card-title center-align">{title}</h5>
+                        <h5 className="title-card center-align">{title}</h5>
                     </div>
 
                     <div className="card-content">
@@ -40,7 +40,7 @@ const Card = ({title, imageSource, text, item1, item2, item3, alt,content,setMod
                         </ul>
                     </div>
                     <button className="cta" onClick={openModal}>
-                        <span>Mas Info</span>
+                        <span>Más Info</span>
                         <svg width="15px" height="10px" viewBox="0 0 13 10">
                             <path d="M1,5 L11,5"></path>
                             <polyline points="8 1 12 5 8 9"></polyline>

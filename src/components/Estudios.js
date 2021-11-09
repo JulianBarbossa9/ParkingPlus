@@ -16,6 +16,20 @@ const cards = [
         content:0
     },
     {
+        id: 3,
+        title: 'Estudio de Mercado',
+        image:ima1,
+        text:'A través del siguiente proyecto se busca evaluar el desarrollo de la aplicación “Parking +” para tratar de ayudar tanto como arrendador como arrendatario, en publicar los sitios de estacionamiento disponibles, la cual presenta una nueva alternativa para los usuarios.',
+        item1:'Uno de los principales inconvenientes en la ciudad de Bogotá, es la invasión de las vías públicas por no encontrar un sitio correcto donde estacionarse.',
+        item2:'La tecnología permite que los dispositivos móviles, tengan distintas herramientas que ayuden a desarrollar actividades diarias en cualquier momento y espacio.',
+        item3:'La tecnología permite que los dispositivos móviles, tengan distintas herramientas que ayuden a desarrollar cualquier actividad.',
+        alt: 'ImagenTarjeta',
+        content:2
+    },
+
+
+
+    {
         id: 2,
         title: 'Factibilidad Económica',
         image:ima1,
@@ -26,17 +40,7 @@ const cards = [
         alt: 'ImagenTarjeta',
         content:1
     },
-    {
-        id: 3,
-        title: 'Estudio de Mercado',
-        image:ima1,
-        text:'A través del siguiente proyecto se busca evaluar el desarrollo de la aplicación “Parking +” para tratar de ayudar tanto como arrendador como arrendatario, en publicar los sitios de estacionamiento disponibles, la cual presenta una nueva alternativa para los usuarios.',
-        item1:'Uno de los principales inconvenientes en la ciudad de Bogotá, es la invasión de las vías públicas por no encontrar un sitio correcto donde estacionarse.',
-        item2:'La tecnología permite que los dispositivos móviles, tengan distintas herramientas que ayuden a desarrollar actividades diarias en cualquier momento y espacio.',
-        item3:'La tecnología permite que los dispositivos móviles, tengan distintas herramientas que ayuden a desarrollar cualquier actividad.',
-        alt: 'ImagenTarjeta',
-        content:2
-    }
+    
 
 
 ]
