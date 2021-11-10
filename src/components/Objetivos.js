@@ -25,7 +25,7 @@ const Objetivos = () => {
                         url={video} 
                         width="100%" 
                         height="100%" 
-                        controls={true}
+                        controls={false}
                         playing={true}
                         loop={true}
                         volume={0}
