@@ -207,7 +207,7 @@ export const informacion=(estudio)=>{
             return (text);
 
             case 6:
-                text=<div>
+                text=<div style={{color: "white"}}>
                     <h5>Activos Circulantes</h5>
                     <p><b>Efectivo:</b> $10.000</p>
                     <p><b>Cuentas por Cobrar:</b> $102.000</p><br></br>
