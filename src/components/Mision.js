@@ -4,7 +4,7 @@ import React from 'react';
 const Mision = () => {
     return (  
         <div className="mision-container row textContainer container">
-            <div className="col s12 m6 l6">
+            <div id ="axis" className="col s12 m6 l6">
                 <div className="center">
                 <h3 className="titleVm">Misión</h3>
                 </div>

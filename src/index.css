@@ -396,7 +396,26 @@ h3{
 
 .titleVm{
   font-size: 80px;
+  animation-duration: 5s;
+  animation-name: slidein;
+  overflow: hidden;
 }
+
+.titleVm:hover{
+  text-shadow: 2px 2px 2px blue;
+}
+
+
+#axis:hover .titleVm{
+  
+  transform: translate(-90px,0);
+	-webkit-transform: translate(-90px,0); /** Chrome & Safari **/
+	-o-transform: translate(-90px,0); /** Opera **/
+	-moz-transform: translate(-90px,0); /** Firefox **/
+  transition: all 3s ease-in-out;
+}
+
+
 .textMision {
   color: white;
 }
