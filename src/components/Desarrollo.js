@@ -4,6 +4,7 @@ import './Card.css';
 import img1 from './../images/Costos.jpg'
 import img2 from './../images/Empresa.jpg'
 import img3 from './../images/Talento.jpg'
+import img5 from './../images/Estados.jpg'
 
 const Desarrollo = ({modal,setModal,infoModal,setInfoModal}) => {
 
@@ -31,10 +32,10 @@ const Desarrollo = ({modal,setModal,infoModal,setInfoModal}) => {
         },
         {
             titulo: 'Estados Financieros',
-            descripcion: '',
+            descripcion: 'Informción respecto al flujo de caja, activos y bienes que la empresa posee',
             descripciones:6,
-            alt: '',
-            img:''
+            alt: 'estados financieros pixabay',
+            img: img5
         },
     ];
     const renderCards=(objetos)=>{
