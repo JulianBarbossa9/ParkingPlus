@@ -2,7 +2,7 @@ import React from 'react';
 import CardInferior from './CardInferior';
 import './Card.css';
 import img1 from './../images/Costos.jpg'
-import img2 from './../images/Empresa.jpg'
+import img2 from './../images/Empresas.jpg'
 import img3 from './../images/Talento.jpg'
 import img5 from './../images/Estados.jpg'
 
