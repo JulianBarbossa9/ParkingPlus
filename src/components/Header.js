@@ -20,10 +20,10 @@ const Header = () => {
                                 <a href="!#"className="nav-menu-link nav-link">Nosotros</a>
                             </li>
                             <li className="nav-menu-item">
-                                <a href="!#"className="nav-menu-link nav-link">Información</a>
+                                <a href="https://github.com/JulianBarbossa9"className="nav-menu-link nav-link">Información</a>
                             </li>
                             <li className="nav-menu-item">
-                                <a href="!#"className="nav-menu-link nav-link">Contacto</a>
+                                <a href="https://calcularhoraparqueadero.netlify.app"className="nav-menu-link nav-link">Cotización</a>
                             </li>
                         </ul>
                     </div>
