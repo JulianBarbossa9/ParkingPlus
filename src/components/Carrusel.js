@@ -4,7 +4,7 @@ import ImageCarusel from './ImageCarrusel';
 import img1 from './../images/retoV1FE.jpg';
 import img2 from './../images/retoV2FE.jpg';
 import img3 from './../images/retoV3FE.jpg';
-import { Carousel } from 'react-responsive-carousel';
+// import { Carousel } from 'react-responsive-carousel';
 /* import img4 from './../images/BoatNoon.jpg';
 import img5 from './../images/Violin.JPG';
 import img6 from './../images/Planet.JPG'; */

@@ -21,7 +21,7 @@ const Vision = () => {
             </div>
             <div className="col s12 m6 l6">
                 <div className="center text-vision">
-                <h3 className="titleVm">Visión</h3> 
+                <h3 className="titleVv">Visión</h3> 
                 </div>
             </div>
         </div>
