@@ -12,6 +12,7 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
     padding: 2rem;
+    color: white;
 `;
 const ModalContainer=styled.div`
     /*glass*/

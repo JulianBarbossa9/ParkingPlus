@@ -80,8 +80,8 @@ body{
 .circle{
   
   z-index: -1;
-  width: 250px;
-    height: 250px;
+  width: 100px;
+    height: 100px;
     background: blue; 
     -moz-border-radius: 70px; 
     -webkit-border-radius: 70px; 
@@ -589,6 +589,7 @@ footer{
 
 .cardInferiorInfo{
   padding: 1rem 2rem;
+  max-height: 200px;
 }
 
 .cardInferior{
@@ -609,8 +610,9 @@ footer{
 
 .CardImageInferior{
   border-radius: 10px 10px 0 0;
-  overflow: hidden;
-
+  overflow:hidden;
+  height: auto;
+  width: 600px;
 }
 
 .card-titleInferior{
@@ -629,7 +631,7 @@ footer{
   }
 
 .card-imageInferior{
-  
+  max-height: 350px;
   position: relative;
   display: flex;
   flex-direction: column;

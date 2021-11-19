@@ -168,7 +168,102 @@ export const informacion=(estudio)=>{
         </div>
 
         return (text);
-            
+
+        case 3:
+
+        text=<div>
+            <h4 className="modalHeading"> Según forma jurídica</h4>
+            <p>
+            Debido a que la empresa será conformada por más de un socio se eligió el tipo de empresa <b>S.A.S.</b> o Sociedad por Acciones Simplificadas, según lo estipula la ley 1258 de 2008. De esta manera, los socios solo son responsables hasta el monto de sus respectivos aportes.
+            </p>
+            <h4 className="modalHeading"> Según el Número de trabajadores</h4>
+            <p>
+                
+                La empresa se considera una <b>Microempresa</b>, debido a que esta conformada por menos de 10 empleados, y aunque según e organigrama hay mas cargos, inicialmente algunos de los empleados tendrán la responsabilidad de varios cargos, esto debido a que inicialmente la carga de trabajo será baja. 
+
+            </p>
+            <h4 className="modalHeading"> Según el sector economico</h4>
+            <p>
+            La empresa es del <b>sector terciario</b> debido a que lo que ofrece es un servicio, la facilidad para las personas de encontrar un parqueadero en la ciudad de bogota. 
+            </p>
+            <h4 className="modalHeading"> Según el Origen de su capital</h4>
+            <p>
+            El origen de capital de la empresa proviene únicamente de sus socios, debido a esto la empresa de una <b>empresa privada</b>
+            </p>
+            <h4 className="modalHeading"> Según el Alcance de su actividad</h4>
+            <p>
+            La idea es que la empresa logre operar en todo el país, sin embargo inicialmente el servicio será solo para la ciudad de Bogotá, debido a esto la empresa es <b>regional</b>
+            </p>
+        </div>
+        return (text);
+
+        case 4 :
+
+        text=<div>
+            <h4 className="modalHeading">Necesidad de personal</h4>
+            <p>
+            Basándose en la necesidad de personal que tiene la empresa, además del organigrama, se requiere el siguiente talento humano que cumpla con los siguientes perfiles.
+            </p>
+            <table className="striped centered responsive-table">
+                    <thead>
+                        <tr>
+                            <th>Cargo</th>
+                            <th>Perfil</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Contador</td>
+                            <td>Profesional en contabilidad</td>
+                        </tr>
+                        <tr>
+                            <td>Director de tecnología</td>
+                            <td>Profesional en ingeniería multimedia o afines.</td>
+                        </tr>
+                        <tr>
+                            <td>Tecnico programador</td>
+                            <td>Tecnico con conocimientos en JavaScript y desarrollo de aplicaciones para dispositivos móviles</td>
+                        </tr>
+                        <tr>
+                            <td>Tecnico de mantenimiento</td>
+                            <td>Tecnico con conocimiento de mantenimiento de equipos de computo</td>
+                        </tr>
+                        <tr>
+                            <td>Diseñador</td>
+                            <td>Profesional, tecnico o tecnólogo con conocimiento en diseño grafico.</td>
+                        </tr>
+                        <tr>
+                            <td>Ilustrador</td>
+                            <td>Profesional, tecnico o tecnólogo con conocimiento en diseño gráfico.</td>
+                        </tr>
+                        <tr>
+                            <td>Director de recursos humanos</td>
+                            <td>Profesional en administración de empresas</td>
+                        </tr>
+                        <tr>
+                            <td>Tecnico de selección</td>
+                            <td>Profesional en psicología (externo)</td>
+                        </tr>
+                        <tr>
+                            <td>Director de marketing</td>
+                            <td>Profesional en marketing o carreras afines</td>
+                        </tr>
+                        <tr>
+                            <td>Tecnico SEO y SEM</td>
+                            <td>Profesional, tecnico o tecnólogo con conocimientos en estrategias de Marketing digital, optimización de SEO y pautas SEM</td>
+                        </tr>
+                        <tr>
+                            <td>Director de operaciones</td>
+                            <td>Profesional o tecnólogo en ingeniería industrial, administración de empresas o afines.</td>
+                        </tr>
+                        <tr>
+                            <td>Auditor</td>
+                            <td>Profesional con conocimientos en auditoria administrativa (externo)</td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+            return(text)
 
         case 5:
             text=<div>
@@ -207,7 +302,7 @@ export const informacion=(estudio)=>{
             return (text);
 
             case 6:
-                text=<div>
+                text=<div style={{color: "white"}}>
                     <h5>Activos Circulantes</h5>
                     <p><b>Efectivo:</b> $10.000</p>
                     <p><b>Cuentas por Cobrar:</b> $102.000</p><br></br>
