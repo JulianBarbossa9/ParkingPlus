@@ -4,10 +4,10 @@ import ImageCarusel from './ImageCarrusel';
 import img1 from './../images/retoV1FE.jpg';
 import img2 from './../images/retoV2FE.jpg';
 import img3 from './../images/retoV3FE.jpg';
-// import { Carousel } from 'react-responsive-carousel';
-/* import img4 from './../images/BoatNoon.jpg';
+//import img4 from './../images/BoatNoon.jpg';
 import img5 from './../images/Violin.JPG';
-import img6 from './../images/Planet.JPG'; */
+//import img6 from './../images/Planet.JPG'; */
+import img7 from './../images/Tarjeta.png'
 
 
 
@@ -102,29 +102,29 @@ const imagenes=[
         href: ' '  
     },
     {   
-        src: img2,
+        src: img7,
         alt: 'imagen2',
-        description: 'aloha2',
+        description: 'Tarjetas de presentación de la empresa',
         href: ' '
-    },
+    },/*
     {   
         src: img3,
         alt: 'imagen3',
         description: 'aloha3', 
         href: ' '  
-    },
+    },*/
 /*     {   
         src: img4,
         alt: 'BoatNoon',
         description: 'Render realizado en cinema 4D y Corona renerer', 
         href: 'https://www.behance.net/diegoww3'  
-    },
+    },*/
     {   
         src: img5,
         alt: 'ViolinPyro',
         description: 'Render realizado en Houdini y cinema 4D', 
         href: 'https://www.behance.net/diegoww3'  
-    },
+    },/*
     {   
         src: img6,
         alt: 'Planet',
